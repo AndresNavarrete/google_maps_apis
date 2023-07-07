@@ -3,7 +3,7 @@ import datetime
 import dateparser
 
 from packages.enums import Google_Modes, User_Modes
-from packages.google_maps import Directions
+from packages.clients.directions import Directions
 from packages.input_parser import InputParser
 from packages.output_parser import OutputParser
 from packages.validator import Validator
