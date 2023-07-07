@@ -1,4 +1,4 @@
-from packages.serviceLevelManager import ServiceLevelManager
+from packages.service_level_manager import ServiceLevelManager
 
 if __name__ == "__main__":
     path = "resources/request.xlsx"

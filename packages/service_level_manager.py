@@ -3,9 +3,9 @@ import datetime
 import dateparser
 
 from packages.enums import Google_Modes, User_Modes
-from packages.googleMaps import Directions
-from packages.inputParser import InputParser
-from packages.outputParser import OutputParser
+from packages.google_maps import Directions
+from packages.input_parser import InputParser
+from packages.output_parser import OutputParser
 from packages.validator import Validator
 
 
