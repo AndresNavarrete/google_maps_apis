@@ -1,0 +1,1393 @@
+{
+    "routes": [
+        {
+            "legs": [
+                {
+                    "distanceMeters": 109847,
+                    "duration": "6151s",
+                    "staticDuration": "6206s",
+                    "polyline": {
+                        "encodedPolyline": "_rwyBbvuyQURQL_@i@OU[MIGu@_AWONZbBxBtAhBR^NTf@n@FHt@dAjAhBRZ|@tAZ?n@j@ZTNLvApAdAlAf@j@`AjAn@r@zCzDdAbAl@n@VZ`AlAdCjC|@~@jBlBlGvGnAhApDrDhKrK`@ZV\\PRjDhD~AbBJL~ArB@B~AvAx@z@jCtCb@j@NZr@n@pCxCp@p@PP|@dAv@nAFHbBhB`@^jAjAvA`BPPXXZXdB|AVTLFNNXVpAl@^NdCd@~Db@d@FdAHhDXj@DJ@v@HbDPxADN?xC^tEh@nEj@r@NtDhAh@LZHjA`@bBp@fDhAdBr@zQ~GhC`ApBt@vCjA^N^NRJ~LjFTJbJrDbAb@r@Zx@`@~@^vJfEp@ZlBv@pBr@hAXrAf@jF~BpB|@tB|@hJhExG|C~EpBbA^dChAfCdAn@Xt@XVLf@n@zAt@nDpA|@\\hAj@|@\\~D`BbEzAnAf@hAb@vChAnChAn@Vr@^rB|@bA\\t@\\bDtA`Br@zB~@bAb@nAh@tAn@VH~Av@bAb@XHxDdB^NlElB\\LtAt@nEbC|@f@~ClBpA|@lAt@lBdA|DdCpChBhFbD|AdAdCnBxAlArFpEdBvAbBtA|DfDnC|Bh@f@x@p@zAnA~BnB~FzEnAfAj@f@`BrAXVTRjBhBh@l@NTr@x@`AlAhB|Bf@n@r@~@PVV\\PTpDtEbAfA|A`BLJTXFPb@j@dBlB~AnB`BjB^h@jDjD\\VtCrBt@b@hE~BpF|C~OlJ~JzF~@r@zFtEJNvBbBxJlIRTtDdE~@bAtBrC|AtBT\\j@~@nCjDpCrDnFnH`CdCxEtDnDdCdAr@zE`D|NzJ`GnE~DtCv\\zVhDdCzEtDlApAj@r@tErFpAlAp@l@jAx@xF|DlAv@vIrFlCfBn@^tAz@PHnN~I|KfHvA|@|@f@tBjAbJzDlBt@r@ZlAr@|BhBdAz@nAhAtChCZZ`BvAdAbAnAfAxBrBv@t@f@d@vHbHdHjG`OjJlLnH~B`B~PrNNLlA~@tFnEnDvC|FvEhGbFlCvBvKdJlBzAtGfFfEdDpGbFlCxBfDnCdG|EpA|@nBjBl@j@hBzBnBrCpAbBxCjEt@fArBfD\\r@vE`H`EjGbBfCV`@DHXb@~A`CfCxDLPLTJNdBlCtG|JhBtCdBnClBnCnAnBjDxD~AfBlCtCfCrCdDpD|FnGnAtAbCdCpIjJp@|@lKhLvEjF~FrGtBtCn@dA~K`QvD|F`A|AfEnGpDhFvAtBfAbBv@|@XZbAdAbItHpDfDnEfE~AvA|CvCpH~G~CpCtNlMJJrKxJpGxFdEnDzDdDx@l@f@`@rC~BvC`CPPRBh@VvDlAxAX|@Jd@DjCJjAFvAFv@FpWjA|GXl@BlBJl@Bh@BzCZn@Hd@HtDv@zFfBhA\\|KdD`ElA~H~BHDxC|@zc@~MdF|AlK`DxXhIfNdEdYvIrA^n@ThBj@hAVdBXbAJvFLzBBlCFpFJzBD`HBtBArPVdLPx@BdADnJNrEHhA@z@AfBIdBQlCe@bIeBtMuCnFkAvCo@lGsApAYjMoC|K_CrAYxFoAxA[|Dy@~Bi@fCg@|AQxAEfCLlCb@tFfAl@LhI`B`MfCtGpAbI~ApNrC`ARbMdCbBPpCHzAAHA~P}A`BSPAbE_@fJw@`AKlCYvP_BrGm@rQaBnXgCxJ_Ab@ElOyAr@Gb@EfBOzGm@jCWfCShBC`BCvRT|@@vFHtIL|A@jHL|ADxKN`BBpFH~AB`DDpHJvFHrDFhEFd@@^@fGH|ABtMXrFBrFH~BD`BDhDJvABn@?nADtBRJ@|@T~@ZlBdAhAp@d@XhElCzLtG|BtAtM|HhJjF`NvHxDbCh@ZbE|Bt@d@rLzGt@b@lEhCdFnCrAz@jEpCfGxDtHjErOvILHLHnGhDn@\\nCzAvFdD|BpAtF~C~DrBtBlAhAn@pBhAtDvB~BtAfAr@RLd@VxD|Bf@\\p@\\j@Z|DrB`B~@nEfCRL`@V`GhDjAl@nL|GB@rEjCvAv@v@d@bE|BjAp@dAl@t@`@lAt@zA|@n@\\ZPzAz@|@f@zBpAxEjCrKjGx@b@TLVLhHdE`CdBbBzAl@l@^^tAzAX^p@v@`B~AlEbF|AbBpFdGjEzE`FtFl@r@jGbHp@t@n@p@|CnDfT~UpFdGLNtAxArDbElE|ErAzALPLNhBlB~AfBbBpBt@v@TVxCfD~DnEj@j@j@j@t@v@PLlDfCvAx@zAv@fAf@pAh@`Br@dH|CnD|ARHdAd@|B~@TLpKbFrCdAhAd@vCvAjAb@vClAvB~@lF|BrF`Cb@Pb@Pz@^~EvBxAn@fAf@|EzBbAh@~FbCB@v@X~B`AxJfEjH~CfCfAbJ~D`HzCrN~F|I~DzBdApElBnLdFjQtHxDdBpB~@jCbB~C~Ar@FfFbB|GvCpD~AhDxAvCnAvLbFfClA~CtAfMlFfUtJ|Ar@|Ap@RRVLdC`AjCl@xB\\jDb@zBXf@Dz@L|APzEn@dC`@fGx@~BZbMlBdAPbFx@hBVvCb@t@J~BZj@J`BVd@JhDf@xAT`CXjARtBf@lBj@r@VrChAt@ZnChA`GdCrElBrEhBrAj@NHhGdC`@Rt@^t@d@hA`Af@j@dAdBTf@d@hAZx@x@pB`@r@~@jA`Az@p@`@`@VzBfAZLHBd@RvClAnAf@hBn@pAZr@JpCPvIPhBP|@NXFZHfHxB|@Xr@TdEpAdA^bCbAnAr@zAlAjB`BhBbBXXp@l@hD|CfB~ArG~F`CxBdB|AjBnBhAtAl@v@~BrDbHhLtDhGb@r@|FlJtErHfAfBx@hAfAdAh@`@f@ZnAj@lA^lJrBdKxBjE`At@PtAX|D|@\\Hp@RnAb@THfBx@v@`@hErBz@b@~HxDr@^d@X~AdAfBvAl@h@hDnDvD|DzA~Ar@r@pBvBtAzAh@j@`CfC^^~CfDfClCh@l@|@|@jBrBf@d@dDdEl@bA\\z@X`AXlA^pAVj@X\\h@XVXdB|AhAnAz@dAb@b@PPR?RHnBhCbBtBJJf@Xx@TT?f@CzAWh@QnB}@h@Yz@e@dG_DVQhAk@|A}@|@c@ZSjAe@dASt@GTAf@AfB?T?V?xBDxBHT@r@F^DVD~@RVH\\L^RrCnAf@Nh@NLDNFdChA\\N^NX@RGPQpBgGBGL[BENIF[HYd@uAb@wAd@wAf@yAh@gBh@yBJ_@r@yBv@{B\\cAd@qAh@yAb@oA^iANc@d@wAb@sAh@cBb@qAh@aBX{@Jc@Hc@^]LWXo@PKVA|A|@rBh@pAd@HDz@h@bAx@`@V|@d@xA|@v@b@lAr@xKdHl@^JHtA`Af@Zp@d@VNl@^`Aj@^T~A~@lC`BNJtHrElAd@zCx@THv@TjA\\jW|G`IvBz@R\\LdEvAnDt@rN|DdCt@zA`@bAVtDdAlFxAbCr@LDn@NzDdAtY|H|HvBxFbB`@Lh@XB@PHdAl@T@X?H@zB^nAZbBb@|^~J~DjAr@R^LTPTHTcAJa@FU`@{A^g@ZYp@c@^Oz@K|@D\\FfBd@bAVPBL@`AANAj@K~@[ZMz@y@h@m@XWTYLQh@o@b@e@fAsAf@o@BE`BgBp@q@`Ak@PIlAi@b@WP]BK`@}A`@u@JOb@g@\\]LELQJOV]h@m@TUd@g@v@}@KKlCuCFG|AcBn@s@xBaCzCeDb@a@PIdAq@FEt@[NGpAc@`A[lAe@l@Uz@Y`Cy@dA_@TK\\KXMJKFChBm@d@Md@IbAIjA?^BVB\\FjCp@bCp@x@PpDf@nEf@rCZH@x@T~@`@NHpAbA|AxAfC~B\\XvA~@fCnApAl@pCjArAn@jBx@`Ad@LDdHbDdIrD~@`@lB|@tCrApAl@nHfDrB~@rErBpCnArAl@PJdAd@zAp@bAd@bAd@rCpAXJr@\\dAd@xAp@b@Rb@RTHvBbAn@X`ATXDj@CzCU~Ea@nOqARC~AK^?F?b@Bh@Dt@LnALV?b@MlAg@h@SRGj@IRAJ@^@L@l@BxAHpAD~@?^@x@Fr@DH@lF\\jCPbDT~ALZ@XB~Hj@j@@n@BvBPz@FhBNlBN`EXtBP`BLhBLTBfEZlBNb@DhBNf@Bb@Db@BnJr@tE\\hAH|@Fb@HdADP@nIn@XBR@N@~ALp@DdF^rDVlF^hBNr@F`CNrAJ`DXdBLb@Df@Dh@DlEZT@vDXH@`@DV@bEZ~ANN?d@Bh@FzAZdA`@`@PLFd@VfAv@^\\JJPRn@z@fCjEpAzBJZHZRhADhABrABzA@j@FxBFnCBbABfBFTH~D\\xOPjHL~ETrJFlCH|D@h@@f@JvEJbFFbC@h@DlBJhATlAFRh@lAh@|@z@|@p@d@JFvBhATLHDtAr@fD`B|JfFfFfC|@d@TL~@f@jFnC|At@r@^~FxC~C~A|Ax@f@ZPNNLRT\\h@f@`AFLf@~ALp@D^BbAS`IEbA]tMOn@c@fCGNIL?LEv@ATAVC~@C~@CjA?PEdAEvAGtALVBl@CpAA`@GnAEr@A|@SVWBOEIMCSFWTQJGBAfCZ\\FvARf@J`Ev@vBd@dAR|AZd@JrDt@`Cb@~ARhCPvADt@?l@CHAJ?RAp@E|@EtAQl@KtDm@rEs@h@IREz@MvB]~Ce@n@KvAUjC]xCe@zAW`@GTCn@M`BYt@Qj@KzD{@~@S|A[fBa@fB_@~A]zA]fB_@bAS`@I^K`@IZGZIfDq@TEzA[jEaAb@Kn@MhAUxBe@nDw@xA[z@QrFkAr@O~A]PCvGuAh@K`AQjIgBVANCZIRCf@MJCXGzAS|@ItBIn@?jBTdCZjATvBb@XHzBh@j@Ld@LRDp@PbBb@~Ct@p@PzBh@jBb@N@vEfA|A\\|@TlAV~Bh@zA\\F@F@JLRDZHXFNFNFb@LF@FBlA\\hAVpAT`@J`@Lv@^nAp@f@Z|CrBZTdBlA`HpERLJF|CzBjD~BjBlARLr@d@|A`AfBlAVPt@n@}AjA_@^"
+                    },
+                    "startLocation": {
+                        "latLng": {
+                            "latitude": 20.1143967,
+                            "longitude": -98.7480231
+                        }
+                    },
+                    "endLocation": {
+                        "latLng": {
+                            "latitude": 19.3019592,
+                            "longitude": -99.14820979999999
+                        }
+                    },
+                    "steps": [
+                        {
+                            "distanceMeters": 29,
+                            "staticDuration": "6s",
+                            "polyline": {
+                                "encodedPolyline": "_rwyBbvuyQURQL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.1143967,
+                                    "longitude": -98.7480231
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.1146046,
+                                    "longitude": -98.7481901
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "DEPART",
+                                "instructions": "Dir\u00edgete hacia el noroeste en 2da B Ju\u00e1rez hacia Av Benito Ju\u00e1rez"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "29 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 43,
+                            "staticDuration": "29s",
+                            "polyline": {
+                                "encodedPolyline": "gswyBdwuyQ_@i@OU"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.1146046,
+                                    "longitude": -98.7481901
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.1148412,
+                                    "longitude": -98.74786710000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av Benito Ju\u00e1rez"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "43 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 85,
+                            "staticDuration": "26s",
+                            "polyline": {
+                                "encodedPolyline": "wtwyBduuyQ[MIGu@_AWO"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.1148412,
+                                    "longitude": -98.74786710000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.1154208,
+                                    "longitude": -98.74736360000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda hacia Prol. Benito Ju\u00e1rez"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "85 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 522,
+                            "staticDuration": "81s",
+                            "polyline": {
+                                "encodedPolyline": "kxwyB~quyQNZbBxBtAhBR^NTf@n@FHt@dAjAhBRZ|@tAZ?n@j@ZTNL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.1154208,
+                                    "longitude": -98.74736360000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.1123328,
+                                    "longitude": -98.75104780000001
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SHARP_LEFT",
+                                "instructions": "Gira totalmente a la izquierda hacia Av Benito Ju\u00e1rez\nPasa por Telcel compucel (a la derecha)."
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,5 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 1543,
+                            "staticDuration": "142s",
+                            "polyline": {
+                                "encodedPolyline": "aewyB`ivyQvApAdAlAf@j@`AjAn@r@zCzDdAbAl@n@VZ@@~@jAdCjC|@~@jBlBlGvGnAhApDrDhKrK`@ZV\\PR"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.1123328,
+                                    "longitude": -98.75104780000001
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.102447100000003,
+                                    "longitude": -98.7614076
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Blvrd Felipe Angeles/Mexico 85\nPasa por Vitromex (a la derecha a 1,1 km)"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "1,5 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 571,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "iguyBxixyQjDhD~AbBJL~ArB@B~AvAx@z@jCtCb@j@NZ"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.102447100000003,
+                                    "longitude": -98.7614076
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.098834699999998,
+                                    "longitude": -98.76528019999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_LEFT",
+                                "instructions": "Toma el ramal de la izquierda en direcci\u00f3n Corredor de la Monta\u00f1a/Parque David Ben Guri\u00f3n"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,6 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 153,
+                            "staticDuration": "9s",
+                            "polyline": {
+                                "encodedPolyline": "uptyB~ayyQr@n@pCxC"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.098834699999998,
+                                    "longitude": -98.76528019999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0978373,
+                                    "longitude": -98.76629249999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "MERGE",
+                                "instructions": "Incorp\u00f3rate a Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 728,
+                            "staticDuration": "41s",
+                            "polyline": {
+                                "encodedPolyline": "ojtyBhhyyQp@p@PP|@dAv@nAFHbBhB`@^jAjAvA`BPPXXZXdB|AVTLFNNXVpAl@^N@?bCd@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0978373,
+                                    "longitude": -98.76629249999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0928705,
+                                    "longitude": -98.770662
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,7 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 327,
+                            "staticDuration": "17s",
+                            "polyline": {
+                                "encodedPolyline": "mksyBrczyQ~Db@d@FdAHhDXj@DJ@v@H"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0928705,
+                                    "longitude": -98.770662
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0899631,
+                                    "longitude": -98.7711497
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "STRAIGHT",
+                                "instructions": "Contin\u00faa recto por Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 477,
+                            "staticDuration": "32s",
+                            "polyline": {
+                                "encodedPolyline": "gyryBtfzyQbDPxADN?xC^tEh@nEj@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0899631,
+                                    "longitude": -98.7711497
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.085734199999997,
+                                    "longitude": -98.77185809999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "STRAIGHT",
+                                "instructions": "Contin\u00faa recto por Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,5 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 2224,
+                            "staticDuration": "120s",
+                            "polyline": {
+                                "encodedPolyline": "y~qyBbkzyQr@NtDhAh@LZHjA`@bBp@fDhAdBr@zQ~GhC`ApBt@vCjA^N^NRJ~LjFTJbJrDbAb@r@Zx@`@~@^vJfEp@ZlBv@pBr@hAX"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.085734199999997,
+                                    "longitude": -98.77185809999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0675627,
+                                    "longitude": -98.7807196
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Mantente a la derecha para permanecer en Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "2,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 927,
+                            "staticDuration": "54s",
+                            "polyline": {
+                                "encodedPolyline": "gmnyBnb|yQrAf@jF~BpB|@tB|@hJhExG|C~EpBbA^"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0675627,
+                                    "longitude": -98.7807196
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0601165,
+                                    "longitude": -98.78471429999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,9 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 279,
+                            "staticDuration": "21s",
+                            "polyline": {
+                                "encodedPolyline": "w~lyBl{|yQdChAfCdAn@Xt@XVLf@n@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0601165,
+                                    "longitude": -98.78471429999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0579401,
+                                    "longitude": -98.7860031
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Blvd. Felipe \u00c1ngeles"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 58,
+                            "staticDuration": "4s",
+                            "polyline": {
+                                "encodedPolyline": "cqlyBnc}yQzAt@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0579401,
+                                    "longitude": -98.7860031
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 20.0574789,
+                                    "longitude": -98.7862693
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Blvd. Felipe \u00c1ngeles contin\u00faa hacia la izquierda hasta Autopista M\u00e9xico - Pachuca/Carr. Federal Pachuca - Mexico/M\u00e9xico - Pachuca/M\u00e9xico 85"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "58 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 24604,
+                            "staticDuration": "1064s",
+                            "polyline": {
+                                "encodedPolyline": "gnlyBde}yQnDpA|@\\hAj@|@\\~D`BbEzAnAf@hAb@vChAnChAn@Vr@^rB|@bA\\t@\\bDtA`Br@zB~@bAb@nAh@tAn@VH~Av@bAb@XHxDdB^NlElB\\LtAt@nEbC|@f@@@|CjBpA|@lAt@lBdA|DdCpChBhFbD|AdAdCnBzAlApFpEdBvAbBtA|DfDnC|Bh@f@x@p@zAnA~BnB~FzEnAfAj@f@`BrAXVTRjBhBh@l@NTr@x@`AlAhB|Bf@n@r@~@PVV\\PTpDtEbAfA|A`BLJTXFPb@j@dBlB~AnB`BjB^h@jDjD\\VtCrBt@b@hE~BpF|C~OlJ~JzF~@r@zFtEJNvBbBxJlIRTtDdE~@bAtBrC|AtBT\\j@~@nCjDpCrDnFnH`CdCxEtDnDdCdAr@zE`D|NzJ`GnE~DtCv\\zVhDdCzEtDlApAj@r@tErFpAlAp@l@jAx@xF|DlAv@vIrFlCfBn@^tAz@PHnN~I|KfHvA|@|@f@tBjAbJzDlBt@r@ZlAr@|BhBdAz@nAhAtChCZZ`BvAdAbAnAfAxBrBv@t@f@d@vHbHdHjG`OjJlLnH~B`B~PrNNLlA~@tFnEnDvC|FvEhGbFlCvBvKdJlBzAtGfFfEdDpGbFlCxBfDnCdG|EpA|@nBjBl@j@hBzBnBrCpAbB@@vChEt@fArBfD\\r@vE`H`EjGbBfCV`@DHXb@~A`CfCxDLPLTJNdBlCtG|JhBtCdBnClBnCnAnBjDxD~AfBlCtCfCrCdDpD|FnGnAtAbCdCpIjJp@|@lKhLvEjF~FrGtBtCn@dA~K`QvD|F`A|AfEnGpDhFvAtBfAbBv@|@XZbAdA@?`ItHpDfDnEfE~AvA|CvCpH~G~CpCtNlMJJrKxJpGxFdEnDzDdDx@l@f@`@rC~BvC`CPP"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 20.0574789,
+                                    "longitude": -98.7862693
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.8895266,
+                                    "longitude": -98.93648569999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Autopista M\u00e9xico - Pachuca/Carr. Federal Pachuca - Mexico/M\u00e9xico - Pachuca/M\u00e9xico 85\nPasa por Pasteko San Antonio (a la derecha a 1,3 km)"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "24,6 km"
+                                },
+                                "staticDuration": {
+                                    "text": "18 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 426,
+                            "staticDuration": "18s",
+                            "polyline": {
+                                "encodedPolyline": "qtkxB`pzzQRBh@VvDlAxAX|@Jd@DjCJjAFvAF"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.8895266,
+                                    "longitude": -98.93648569999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.8858304,
+                                    "longitude": -98.9373821
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_LEFT",
+                                "instructions": "Toma el ramal M\u00e9xico 85D de la izquierda en direcci\u00f3n M\u00e9xico D.F"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 32910,
+                            "staticDuration": "1242s",
+                            "polyline": {
+                                "encodedPolyline": "m}jxBruzzQv@FpWjA|GXl@BlBJl@Bh@BzCZn@Hd@HtDv@zFfBhA\\|KdD`ElA~H~BHDxC|@zc@~MdF|AlK`DxXhIfNdEdYvIrA^n@ThBj@hAVdBXbAJvFLzBBlCFpFJzBD`HBtBArPVdLPx@BdADnJNrEHhA@z@AfBIdBQlCe@bIeBtMuCnFkAvCo@lGsApAYjMoC|K_CrAYxFoAxA[|Dy@~Bi@fCg@|AQxAEfCLlCb@tFfAl@LhI`B`MfCtGpAbI~ApNrC`ARbMdCbBPpCHzAAHA~P}A`BSPAbE_@fJw@`AKlCYvP_BrGm@rQaBnXgCxJ_Ab@ElOyAr@Gb@EfBOzGm@jCWfCShBC`BCvRT|@@vFHtIL|A@jHL|ADxKN`BBpFH~AB`DDpHJvFHrDFhEFd@@^@fGH|ABtMXrFBrFH~BD`BDhDJvABn@?nADtBRJ@|@T~@ZlBdAhAp@d@XhElCzLtG|BtAtM|HhJjF`NvHxDbCh@ZbE|Bt@d@rLzGt@b@lEhCdFnCrAz@jEpCfGxDtHjErOvILHLHnGhDn@\\nCzAvFdD|BpAtF~C~DrBtBlAhAn@pBhAtDvB~BtAfAr@RLd@VxD|Bf@\\p@\\j@Z|DrB`B~@nEfCRL`@V`GhDjAl@nL|GB@rEjCvAv@v@d@bE|BjAp@dAl@t@`@lAt@zA|@n@\\ZPzAz@|@f@zBpAxEjCrKjGx@b@TLVLhHdE`CdBbBzAl@l@^^tAzAX^p@v@`B~AlEbF|AbBpFdGjEzE`FtFl@r@jGbHp@t@n@p@|CnDfT~UpFdGLNtAxArDbElE|ErAzALPLNhBlB~AfBbBpBt@v@TVxCfD~DnEj@j@j@j@t@v@PLlDfCvAx@zAv@fAf@pAh@`Br@dH|CnD|ARHdAd@|B~@TLpKbFrCdAhAd@vCvAjAb@vClAvB~@lF|BrF`Cb@Pb@Pz@^~EvBxAn@fAf@|EzBbAh@~FbCB@v@X~B`AxJfEjH~CfCfAbJ~D`HzCrN~F|I~DzBdApElBnLdFjQtHxDdBpB~@jCbB~C~A"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.8858304,
+                                    "longitude": -98.9373821
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.6181582,
+                                    "longitude": -99.030245
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Autopista M\u00e9xico - Pachuca/M\u00e9xico 85D\nCarretera con peajes"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "32,9 km"
+                                },
+                                "staticDuration": {
+                                    "text": "21 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 12463,
+                            "staticDuration": "528s",
+                            "polyline": {
+                                "encodedPolyline": "otvvB~yl{Qr@FfFbB|GvCpD~AhDxAvCnAvLbFfClA~CtAfMlFfUtJ|Ar@|Ap@RRVLdC`AjCl@xB\\jDb@zBXf@Dz@L|APzEn@dC`@fGx@~BZbMlBdAPbFx@hBVvCb@t@J~BZj@J`BVd@JhDf@xAT`CXjARtBf@lBj@r@VrChAt@ZnChA`GdCrElBrEhBrAj@NHhGdC`@Rt@^t@d@hA`Af@j@dAdBTf@d@hAZx@x@pB`@r@~@jA`Az@p@`@`@VzBfAZLHBd@RvClAnAf@hBn@pAZr@JpCPvIPhBP|@NXFZHfHxB|@Xr@TdEpAdA^bCbAnAr@zAlAjB`BhBbBXXp@l@hD|CfB~ArG~F`CxBdB|AjBnBhAtAl@v@~BrDbHhLtDhGb@r@|FlJtErHfAfBx@hAfAdAh@`@f@ZnAj@lA^lJrBdKxBjE`At@PtAX|D|@\\Hp@RnAb@THfBx@v@`@hErBz@b@~HxDr@^d@X~AdAfBvAl@h@hDnDvD|DzA~Ar@r@pBvBtAzAh@j@`CfC^^~CfDfClCh@l@|@|@jBrBf@d@dDdEl@bA\\z@X`AXlA^pAVj@X\\h@X"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.6181582,
+                                    "longitude": -99.030245
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.524656399999998,
+                                    "longitude": -99.0883851
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Autopista M\u00e9xico - Pachuca/M\u00e9xico 85D\nCarretera con peajes"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "12,5 km"
+                                },
+                                "staticDuration": {
+                                    "text": "9 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 243,
+                            "staticDuration": "15s",
+                            "polyline": {
+                                "encodedPolyline": "cldvBlex{QVXdB|AhAnAz@dAb@b@PP"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.524656399999998,
+                                    "longitude": -99.0883851
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5230945,
+                                    "longitude": -99.09000759999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Autopista M\u00e9xico - Pachuca/M\u00e9xico 85D contin\u00faa hacia la derecha hasta Carr. Federal Pachuca - Mexico/Av. Michoac\u00e1n/M\u00e9xico 85"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 385,
+                            "staticDuration": "37s",
+                            "polyline": {
+                                "encodedPolyline": "ibdvBpox{QR?RHnBhCbBtBJJf@Xx@TT?f@CzAWh@Q"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5230945,
+                                    "longitude": -99.09000759999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5202954,
+                                    "longitude": -99.09141199999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_LEFT",
+                                "instructions": "Toma la salida de la izquierda en direcci\u00f3n Martin Carrera/Centenario"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 709,
+                            "staticDuration": "116s",
+                            "polyline": {
+                                "encodedPolyline": "{pcvBhxx{QnB}@h@Yz@e@dG_DVQhAk@|A}@|@c@ZSjAe@dASt@GTAf@AfB?T?"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5202954,
+                                    "longitude": -99.09141199999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5145706,
+                                    "longitude": -99.088726
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "MERGE",
+                                "instructions": "Incorp\u00f3rate a Av Emiliano Zapata"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,7 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 162,
+                            "staticDuration": "24s",
+                            "polyline": {
+                                "encodedPolyline": "ambvBpgx{QV?xBDxBHT@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5145706,
+                                    "longitude": -99.088726
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5131192,
+                                    "longitude": -99.0888208
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "NAME_CHANGE",
+                                "instructions": "Contin\u00faa por Av. Via Morelos"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 433,
+                            "staticDuration": "47s",
+                            "polyline": {
+                                "encodedPolyline": "_dbvBbhx{Qr@F^DVD~@RVH\\L^RrCnAf@Nh@NLDNFdChA\\N^N"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5131192,
+                                    "longitude": -99.0888208
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5095471,
+                                    "longitude": -99.09040399999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "STRAIGHT",
+                                "instructions": "Contin\u00faa recto por Av. Via Morelos"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 228,
+                            "staticDuration": "23s",
+                            "polyline": {
+                                "encodedPolyline": "umavB~qx{QX@RGPQpBgGBGL[BENI"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5095471,
+                                    "longitude": -99.09040399999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.5084704,
+                                    "longitude": -99.08869659999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_LEFT",
+                                "instructions": "Toma el ramal de la izquierda en direcci\u00f3n Eje 3 Ote/Av Central"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 1104,
+                            "staticDuration": "83s",
+                            "polyline": {
+                                "encodedPolyline": "}favBjgx{QF[HYd@uAb@wAd@wAf@yAh@gBh@yBJ_@r@yBv@{B\\cAd@qAh@yAb@oA^iANc@d@wAb@sAh@cBb@qAh@aBX{@Jc@Hc@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.5084704,
+                                    "longitude": -99.08869659999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.504417099999998,
+                                    "longitude": -99.07908499999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "MERGE",
+                                "instructions": "Incorp\u00f3rate a Anillo Perif./Av. R\u00edo de los Remedios"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "1,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 154,
+                            "staticDuration": "22s",
+                            "polyline": {
+                                "encodedPolyline": "sm`vBfkv{Q^]LWXo@PKVA|A|@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.504417099999998,
+                                    "longitude": -99.07908499999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.503384099999998,
+                                    "longitude": -99.0788056
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_RIGHT",
+                                "instructions": "Toma la salida hacia Av Central"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 5376,
+                            "staticDuration": "586s",
+                            "polyline": {
+                                "encodedPolyline": "cg`vBpiv{QrBh@pAd@HDz@h@bAx@`@V|@d@xA|@v@b@lAr@xKdHl@^JHtA`Af@Zp@d@VNl@^`Aj@^T~A~@lC`BNJtHrElAd@zCx@THv@TjA\\jW|G`IvBz@R\\LdEvAnDt@rN|DdCt@zA`@bAVtDdAlFxAbCr@LDn@NzDdAtY|H|HvBxFbB`@Lh@XB@PHdAl@T@X?H@zB^nAZbBb@|^~J~DjAr@R^LTP"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.503384099999998,
+                                    "longitude": -99.0788056
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.4591063,
+                                    "longitude": -99.0986054
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda hacia Av. Gran Canal del Desag\u00fce\nCarretera con peajes"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "5,4 km"
+                                },
+                                "staticDuration": {
+                                    "text": "10 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 134,
+                            "staticDuration": "34s",
+                            "polyline": {
+                                "encodedPolyline": "mrwuBhez{QTHTcAJa@FU`@{A"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.4591063,
+                                    "longitude": -99.0986054
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.458622599999998,
+                                    "longitude": -99.0975759
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Gira a la izquierda hacia Av. 506/\u00c1ngel Albino Corzo/Eje 3 Nte\nContin\u00faa hacia Av. 506/Eje 3 Nte"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 1147,
+                            "staticDuration": "135s",
+                            "polyline": {
+                                "encodedPolyline": "kowuBz~y{Q^g@ZYp@c@^Oz@K|@D\\FfBd@bAVPBL@`AANAj@K~@[ZMz@y@h@m@XWTYLQh@o@b@e@fAsAf@o@BE`BgBp@q@`Ak@PIlAi@b@WP]BK@A^{A`@u@JOb@g@\\]LE"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.458622599999998,
+                                    "longitude": -99.0975759
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.4506086,
+                                    "longitude": -99.0922865
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Av 503"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "1,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 168,
+                            "staticDuration": "15s",
+                            "polyline": {
+                                "encodedPolyline": "i}uuBx}x{QLQJOV]h@m@TUd@g@v@}@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.4506086,
+                                    "longitude": -99.0922865
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.4495657,
+                                    "longitude": -99.091123
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda hacia Av. Rio Consulado"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 3983,
+                            "staticDuration": "283s",
+                            "polyline": {
+                                "encodedPolyline": "yvuuBnvx{QKKlCuCFG|AcBn@s@xBaCzCeDb@a@PIdAq@FEt@[NGpAc@`A[lAe@l@Uz@Y`Cy@dA_@TK\\KXMJKFChBm@d@Md@IbAIjA?^BVB\\FjCp@bCp@x@PpDf@nEf@rCZH@x@T~@`@NHpAbA|AxAfC~B\\XvA~@fCnApAl@@?nCjArAn@jBx@`Ad@LDdHbDdIrD~@`@lB|@tCrApAl@nHfDrB~@rErBpCnArAl@PJdAd@zAp@bAd@bAd@rCpA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.4495657,
+                                    "longitude": -99.091123
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.4184065,
+                                    "longitude": -99.0971759
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para continuar por Cto. Interior"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "4,0 km"
+                                },
+                                "staticDuration": {
+                                    "text": "5 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 1063,
+                            "staticDuration": "119s",
+                            "polyline": {
+                                "encodedPolyline": "atouBj|y{QXJr@\\dAd@xAp@b@Rb@RTHvBbAn@X`ATXDj@CzCU~Ea@nOqARC~AK^?F?b@Bh@Dt@L"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.4184065,
+                                    "longitude": -99.0971759
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.409249199999998,
+                                    "longitude": -99.0980161
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para permanecer en Cto. Interior"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "1,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 8729,
+                            "staticDuration": "493s",
+                            "polyline": {
+                                "encodedPolyline": "yzmuBraz{QnALV?b@MlAg@h@SRGj@IRAJ@^@L@l@BxAHpAD~@?^@x@Fr@DH@lF\\jCPbDT~ALZ@XB~Hj@j@@n@BvBPz@FhBNlBN`EXtBP`BLhBLTBfEZlBNb@DhBNf@Bb@Db@BnJr@tE\\hAH|@Fb@HdADP@nIn@XBR@N@~ALp@DdF^rDVlF^hBNr@F`CNrAJ`DXdBLb@Df@Dh@DlEZT@vDXH@`@DV@bEZ~ANN?d@Bh@FzAZdA`@`@PLFd@VfAv@^\\JJPRn@z@fCjEpAzBJZHZRhADhABrABzA@j@FxBFnCBbABfBFTH~D\\xOPjHL~ETrJFlCH|D@h@@f@JvEJbFFbC@h@DlBJhATlAFRh@lAh@|@z@|@p@d@JFvBhATL~Ax@fD`B|JfFfFfC|@d@TL~@f@jFnC|At@r@^~FxC~C~A|Ax@f@ZPNNLRT\\h@f@`AFLf@~ALp@D^BbAYdK]tM"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.409249199999998,
+                                    "longitude": -99.0980161
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3568711,
+                                    "longitude": -99.1383757
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_LEFT",
+                                "instructions": "Mantente a la izquierda para continuar por Av. R\u00edo Churubusco"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "8,7 km"
+                                },
+                                "staticDuration": {
+                                    "text": "8 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 120,
+                            "staticDuration": "18s",
+                            "polyline": {
+                                "encodedPolyline": "mscuBz}a|QOn@c@fCGNIL"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.3568711,
+                                    "longitude": -99.1383757
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3572185,
+                                    "longitude": -99.13944839999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_RIGHT",
+                                "instructions": "Toma la salida 14-A hacia Circuito Bicentenario/P El\u00edas Calles/Tlalpan Norte"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 307,
+                            "staticDuration": "35s",
+                            "polyline": {
+                                "encodedPolyline": "sucuBpdb|Q?LEv@ATAVC~@C~@CjA?PEdAEvAGtA"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.3572185,
+                                    "longitude": -99.13944839999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3574268,
+                                    "longitude": -99.1423641
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "MERGE",
+                                "instructions": "Incorp\u00f3rate a Cto. Interior/Cto Interior Avenida R\u00edo Churubusco/Av. R\u00edo Churubusco"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 202,
+                            "staticDuration": "30s",
+                            "polyline": {
+                                "encodedPolyline": "}vcuBvvb|QLVBl@CpAA`@GnAEr@A|@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.3574268,
+                                    "longitude": -99.1423641
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3574549,
+                                    "longitude": -99.14426329999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_LEFT",
+                                "instructions": "Gira ligeramente a la izquierda hacia Tlalpan Sur / L\u00e1zaro C\u00e1rdenas"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,2 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 98,
+                            "staticDuration": "16s",
+                            "polyline": {
+                                "encodedPolyline": "awcuBrbc|QSVWBOEIMCSFWTQNI"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.3574549,
+                                    "longitude": -99.14426329999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.357585099999998,
+                                    "longitude": -99.14393679999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "RAMP_RIGHT",
+                                "instructions": "Gira a la derecha para acceder al ramal en direcci\u00f3n Cto. Bicentenario/Cuernavaca/M\u00e9xico 95/Tlalpan S"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "0,1 km"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 5300,
+                            "staticDuration": "434s",
+                            "polyline": {
+                                "encodedPolyline": "}wcuBr`c|QfCZ\\FvARf@J`Ev@vBd@dAR|AZd@JrDt@`Cb@~ARhCPvADt@?l@CHAJ?RAp@E|@EtAQl@KtDm@rEs@h@IREz@MvB]~Ce@n@KvAUjC]xCe@zAW`@GTCn@M`BYt@Qj@KzD{@~@S|A[fBa@fB_@~A]zA]fB_@bAS`@I^K`@IZGZIfDq@TEzA[jEaAb@Kn@MhAUxBe@nDw@xA[z@QrFkAr@O~A]PCvGuAh@K`AQjIgBVANCZIRCf@MJCXGzAS|@ItBIn@?jBTdCZjATvBb@XHzBh@j@Ld@LRDp@PbBb@~Ct@p@PzBh@jBb@N@vEfA|A\\|@TlAV~Bh@zA\\NB"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.357585099999998,
+                                    "longitude": -99.14393679999999
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3115487,
+                                    "longitude": -99.1410362
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "MERGE",
+                                "instructions": "Incorp\u00f3rate a Calz. de Tlalpan\nPasa por ESCUELA DE MANEJO HARVEY coyoacan (a la derecha a 4 km)"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "5,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "7 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 1343,
+                            "staticDuration": "147s",
+                            "polyline": {
+                                "encodedPolyline": "exztBnnb|QJLB?NDZHXFNFNFb@LF@FBlA\\hAVpATB?\\J`@Lv@^nAp@f@Z|CrBZTdBlA`HpERLJF|CzBjD~BjBlARLr@d@|A`AfBlAVPt@n@"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.3115487,
+                                    "longitude": -99.1410362
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.301329799999998,
+                                    "longitude": -99.1476658
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_SLIGHT_RIGHT",
+                                "instructions": "Gira ligeramente a la derecha para continuar por Calz. de Tlalpan"
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "1,3 km"
+                                },
+                                "staticDuration": {
+                                    "text": "2 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        },
+                        {
+                            "distanceMeters": 90,
+                            "staticDuration": "26s",
+                            "polyline": {
+                                "encodedPolyline": "ixxtB|wc|Q}AjA_@^"
+                            },
+                            "startLocation": {
+                                "latLng": {
+                                    "latitude": 19.301329799999998,
+                                    "longitude": -99.1476658
+                                }
+                            },
+                            "endLocation": {
+                                "latLng": {
+                                    "latitude": 19.3019592,
+                                    "longitude": -99.14820979999999
+                                }
+                            },
+                            "navigationInstruction": {
+                                "maneuver": "TURN_RIGHT",
+                                "instructions": "Gira a la derecha hacia Ent. B Estadio Azteca\nEl destino est\u00e1 a la derecha."
+                            },
+                            "localizedValues": {
+                                "distance": {
+                                    "text": "90 m"
+                                },
+                                "staticDuration": {
+                                    "text": "1 min"
+                                }
+                            },
+                            "travelMode": "DRIVE"
+                        }
+                    ],
+                    "travelAdvisory": {
+                        "tollInfo": {
+                            "estimatedPrice": [
+                                {
+                                    "currencyCode": "MXN",
+                                    "units": "63"
+                                }
+                            ]
+                        }
+                    },
+                    "localizedValues": {
+                        "distance": {
+                            "text": "110 km"
+                        },
+                        "duration": {
+                            "text": "1h 43 min"
+                        },
+                        "staticDuration": {
+                            "text": "1h 43 min"
+                        }
+                    }
+                }
+            ],
+            "distanceMeters": 109847,
+            "duration": "6151s",
+            "staticDuration": "6205s",
+            "polyline": {
+                "encodedPolyline": "_rwyBbvuyQURQL_@i@OU[MIGu@_AWONZbBxBtAhBR^NTf@n@FHt@dAjAhBRZ|@tAZ?n@j@ZTNLvApAdAlAf@j@`AjAn@r@zCzDdAbAl@n@VZ`AlAdCjC|@~@jBlBlGvGnAhApDrDhKrK`@ZV\\PRjDhD~AbBJL~ArB@B~AvAx@z@jCtCb@j@NZr@n@pCxCp@p@PP|@dAv@nAFHbBhB`@^jAjAvA`BPPXXZXdB|AVTLFNNXVpAl@^NdCd@~Db@d@FdAHhDXj@DJ@v@HbDPxADN?xC^tEh@nEj@r@NtDhAh@LZHjA`@bBp@fDhAdBr@zQ~GhC`ApBt@vCjA^N^NRJ~LjFTJbJrDbAb@r@Zx@`@~@^vJfEp@ZlBv@pBr@hAXrAf@jF~BpB|@tB|@hJhExG|C~EpBbA^dChAfCdAn@Xt@XVLf@n@zAt@nDpA|@\\hAj@|@\\~D`BbEzAnAf@hAb@vChAnChAn@Vr@^rB|@bA\\t@\\bDtA`Br@zB~@bAb@nAh@tAn@VH~Av@bAb@XHxDdB^NlElB\\LtAt@nEbC|@f@~ClBpA|@lAt@lBdA|DdCpChBhFbD|AdAdCnBxAlArFpEdBvAbBtA|DfDnC|Bh@f@x@p@zAnA~BnB~FzEnAfAj@f@`BrAXVTRjBhBh@l@NTr@x@`AlAhB|Bf@n@r@~@PVV\\PTpDtEbAfA|A`BLJTXFPb@j@dBlB~AnB`BjB^h@jDjD\\VtCrBt@b@hE~BpF|C~OlJ~JzF~@r@zFtEJNvBbBxJlIRTtDdE~@bAtBrC|AtBT\\j@~@nCjDpCrDnFnH`CdCxEtDnDdCdAr@zE`D|NzJ`GnE~DtCv\\zVhDdCzEtDlApAj@r@tErFpAlAp@l@jAx@xF|DlAv@vIrFlCfBn@^tAz@PHnN~I|KfHvA|@|@f@tBjAbJzDlBt@r@ZlAr@|BhBdAz@nAhAtChCZZ`BvAdAbAnAfAxBrBv@t@f@d@vHbHdHjG`OjJlLnH~B`B~PrNNLlA~@tFnEnDvC|FvEhGbFlCvBvKdJlBzAtGfFfEdDpGbFlCxBfDnCdG|EpA|@nBjBl@j@hBzBnBrCpAbBxCjEt@fArBfD\\r@vE`H`EjGbBfCV`@DHXb@~A`CfCxDLPLTJNdBlCtG|JhBtCdBnClBnCnAnBjDxD~AfBlCtCfCrCdDpD|FnGnAtAbCdCpIjJp@|@lKhLvEjF~FrGtBtCn@dA~K`QvD|F`A|AfEnGpDhFvAtBfAbBv@|@XZbAdAbItHpDfDnEfE~AvA|CvCpH~G~CpCtNlMJJrKxJpGxFdEnDzDdDx@l@f@`@rC~BvC`CPPRBh@VvDlAxAX|@Jd@DjCJjAFvAFv@FpWjA|GXl@BlBJl@Bh@BzCZn@Hd@HtDv@zFfBhA\\|KdD`ElA~H~BHDxC|@zc@~MdF|AlK`DxXhIfNdEdYvIrA^n@ThBj@hAVdBXbAJvFLzBBlCFpFJzBD`HBtBArPVdLPx@BdADnJNrEHhA@z@AfBIdBQlCe@bIeBtMuCnFkAvCo@lGsApAYjMoC|K_CrAYxFoAxA[|Dy@~Bi@fCg@|AQxAEfCLlCb@tFfAl@LhI`B`MfCtGpAbI~ApNrC`ARbMdCbBPpCHzAAHA~P}A`BSPAbE_@fJw@`AKlCYvP_BrGm@rQaBnXgCxJ_Ab@ElOyAr@Gb@EfBOzGm@jCWfCShBC`BCvRT|@@vFHtIL|A@jHL|ADxKN`BBpFH~AB`DDpHJvFHrDFhEFd@@^@fGH|ABtMXrFBrFH~BD`BDhDJvABn@?nADtBRJ@|@T~@ZlBdAhAp@d@XhElCzLtG|BtAtM|HhJjF`NvHxDbCh@ZbE|Bt@d@rLzGt@b@lEhCdFnCrAz@jEpCfGxDtHjErOvILHLHnGhDn@\\nCzAvFdD|BpAtF~C~DrBtBlAhAn@pBhAtDvB~BtAfAr@RLd@VxD|Bf@\\p@\\j@Z|DrB`B~@nEfCRL`@V`GhDjAl@nL|GB@rEjCvAv@v@d@bE|BjAp@dAl@t@`@lAt@zA|@n@\\ZPzAz@|@f@zBpAxEjCrKjGx@b@TLVLhHdE`CdBbBzAl@l@^^tAzAX^p@v@`B~AlEbF|AbBpFdGjEzE`FtFl@r@jGbHp@t@n@p@|CnDfT~UpFdGLNtAxArDbElE|ErAzALPLNhBlB~AfBbBpBt@v@TVxCfD~DnEj@j@j@j@t@v@PLlDfCvAx@zAv@fAf@pAh@`Br@dH|CnD|ARHdAd@|B~@TLpKbFrCdAhAd@vCvAjAb@vClAvB~@lF|BrF`Cb@Pb@Pz@^~EvBxAn@fAf@|EzBbAh@~FbCB@v@X~B`AxJfEjH~CfCfAbJ~D`HzCrN~F|I~DzBdApElBnLdFjQtHxDdBpB~@jCbB~C~Ar@FfFbB|GvCpD~AhDxAvCnAvLbFfClA~CtAfMlFfUtJ|Ar@|Ap@RRVLdC`AjCl@xB\\jDb@zBXf@Dz@L|APzEn@dC`@fGx@~BZbMlBdAPbFx@hBVvCb@t@J~BZj@J`BVd@JhDf@xAT`CXjARtBf@lBj@r@VrChAt@ZnChA`GdCrElBrEhBrAj@NHhGdC`@Rt@^t@d@hA`Af@j@dAdBTf@d@hAZx@x@pB`@r@~@jA`Az@p@`@`@VzBfAZLHBd@RvClAnAf@hBn@pAZr@JpCPvIPhBP|@NXFZHfHxB|@Xr@TdEpAdA^bCbAnAr@zAlAjB`BhBbBXXp@l@hD|CfB~ArG~F`CxBdB|AjBnBhAtAl@v@~BrDbHhLtDhGb@r@|FlJtErHfAfBx@hAfAdAh@`@f@ZnAj@lA^lJrBdKxBjE`At@PtAX|D|@\\Hp@RnAb@THfBx@v@`@hErBz@b@~HxDr@^d@X~AdAfBvAl@h@hDnDvD|DzA~Ar@r@pBvBtAzAh@j@`CfC^^~CfDfClCh@l@|@|@jBrBf@d@dDdEl@bA\\z@X`AXlA^pAVj@X\\h@XVXdB|AhAnAz@dAb@b@PPR?RHnBhCbBtBJJf@Xx@TT?f@CzAWh@QnB}@h@Yz@e@dG_DVQhAk@|A}@|@c@ZSjAe@dASt@GTAf@AfB?T?V?xBDxBHT@r@F^DVD~@RVH\\L^RrCnAf@Nh@NLDNFdChA\\N^NX@RGPQpBgGBGL[BENIF[HYd@uAb@wAd@wAf@yAh@gBh@yBJ_@r@yBv@{B\\cAd@qAh@yAb@oA^iANc@d@wAb@sAh@cBb@qAh@aBX{@Jc@Hc@^]LWXo@PKVA|A|@rBh@pAd@HDz@h@bAx@`@V|@d@xA|@v@b@lAr@xKdHl@^JHtA`Af@Zp@d@VNl@^`Aj@^T~A~@lC`BNJtHrElAd@zCx@THv@TjA\\jW|G`IvBz@R\\LdEvAnDt@rN|DdCt@zA`@bAVtDdAlFxAbCr@LDn@NzDdAtY|H|HvBxFbB`@Lh@XB@PHdAl@T@X?H@zB^nAZbBb@|^~J~DjAr@R^LTPTHTcAJa@FU`@{A^g@ZYp@c@^Oz@K|@D\\FfBd@bAVPBL@`AANAj@K~@[ZMz@y@h@m@XWTYLQh@o@b@e@fAsAf@o@BE`BgBp@q@`Ak@PIlAi@b@WP]BK`@}A`@u@JOb@g@\\]LELQJOV]h@m@TUd@g@v@}@KKlCuCFG|AcBn@s@xBaCzCeDb@a@PIdAq@FEt@[NGpAc@`A[lAe@l@Uz@Y`Cy@dA_@TK\\KXMJKFChBm@d@Md@IbAIjA?^BVB\\FjCp@bCp@x@PpDf@nEf@rCZH@x@T~@`@NHpAbA|AxAfC~B\\XvA~@fCnApAl@pCjArAn@jBx@`Ad@LDdHbDdIrD~@`@lB|@tCrApAl@nHfDrB~@rErBpCnArAl@PJdAd@zAp@bAd@bAd@rCpAXJr@\\dAd@xAp@b@Rb@RTHvBbAn@X`ATXDj@CzCU~Ea@nOqARC~AK^?F?b@Bh@Dt@LnALV?b@MlAg@h@SRGj@IRAJ@^@L@l@BxAHpAD~@?^@x@Fr@DH@lF\\jCPbDT~ALZ@XB~Hj@j@@n@BvBPz@FhBNlBN`EXtBP`BLhBLTBfEZlBNb@DhBNf@Bb@Db@BnJr@tE\\hAH|@Fb@HdADP@nIn@XBR@N@~ALp@DdF^rDVlF^hBNr@F`CNrAJ`DXdBLb@Df@Dh@DlEZT@vDXH@`@DV@bEZ~ANN?d@Bh@FzAZdA`@`@PLFd@VfAv@^\\JJPRn@z@fCjEpAzBJZHZRhADhABrABzA@j@FxBFnCBbABfBFTH~D\\xOPjHL~ETrJFlCH|D@h@@f@JvEJbFFbC@h@DlBJhATlAFRh@lAh@|@z@|@p@d@JFvBhATLHDtAr@fD`B|JfFfFfC|@d@TL~@f@jFnC|At@r@^~FxC~C~A|Ax@f@ZPNNLRT\\h@f@`AFLf@~ALp@D^BbAS`IEbA]tMOn@c@fCGNIL?LEv@ATAVC~@C~@CjA?PEdAEvAGtALVBl@CpAA`@GnAEr@A|@SVWBOEIMCSFWTQJGBAfCZ\\FvARf@J`Ev@vBd@dAR|AZd@JrDt@`Cb@~ARhCPvADt@?l@CHAJ?RAp@E|@EtAQl@KtDm@rEs@h@IREz@MvB]~Ce@n@KvAUjC]xCe@zAW`@GTCn@M`BYt@Qj@KzD{@~@S|A[fBa@fB_@~A]zA]fB_@bAS`@I^K`@IZGZIfDq@TEzA[jEaAb@Kn@MhAUxBe@nDw@xA[z@QrFkAr@O~A]PCvGuAh@K`AQjIgBVANCZIRCf@MJCXGzAS|@ItBIn@?jBTdCZjATvBb@XHzBh@j@Ld@LRDp@PbBb@~Ct@p@PzBh@jBb@N@vEfA|A\\|@TlAV~Bh@zA\\F@F@JLRDZHXFNFNFb@LF@FBlA\\hAVpAT`@J`@Lv@^nAp@f@Z|CrBZTdBlA`HpERLJF|CzBjD~BjBlARLr@d@|A`AfBlAVPt@n@}AjA_@^"
+            },
+            "description": "Autopista M\u00e9xico - Pachuca/M\u00e9xico 85D",
+            "warnings": [
+                "Hay peajes",
+                "Esta ruta incluye una autopista."
+            ],
+            "viewport": {
+                "low": {
+                    "latitude": 19.3013298,
+                    "longitude": -99.14820979999999
+                },
+                "high": {
+                    "latitude": 20.1154208,
+                    "longitude": -98.74736360000001
+                }
+            },
+            "travelAdvisory": {
+                "tollInfo": {
+                    "estimatedPrice": [
+                        {
+                            "currencyCode": "MXN",
+                            "units": "63"
+                        }
+                    ]
+                }
+            },
+            "localizedValues": {
+                "distance": {
+                    "text": "110 km"
+                },
+                "duration": {
+                    "text": "1h 43 min"
+                },
+                "staticDuration": {
+                    "text": "1h 43 min"
+                }
+            },
+            "routeToken": "CoIKCoYJClB79IxonCFIHOIzVbEIVXOQMw64HIjVJ24qjWai8iDaXaqRP9KuzqQJv665jlRSV006xve09tqnJnsAf0RPR9oxYgVsTbjd3Nl1-UyF8dtUtxK4Ap82_QtZPyTFMkoGqJYuxfygLsX8mnOb1Buw4ObVTu8YriezfdCUJ9ID_l3-MXNxWd5hNWCZdrVRMNLiXYLxkG5lUCOJ845jdBeC_nc6o6rvjKcrhQxbndAOQzbxzYYdwluRm59VqaaUqHCXl1XLxZhi6nKpDCtaiZUASMmBesXWhazwCWsRVTWdE4uSHfFrOeBgPZHqhCFBhGmvUMqw2mR0n0LU7CykGPbfvQ7VLzQb-C2fwX4L7GaKyEN2dWqN0c3O7UJHhxOQJSvNUHioefRkDPJRcw7DYgp_bWaLJkKVT_jCmoN6fneEtlqUDr25tjN78Z3DlpPv4OQGeEPuJElTU94X_qJzyU8-qEPw4Ph-Awbm0FQJx5KrkEbgBIYwQHwklh7QdsqTDyzH5TpCmv7npSgKzXMpZxr2A6CivMoMXzMuFvuh6IAFlQPeHAgoPBimCqENHYUJ_xrVAtPmA_SoAzMSDxbmC68MGr4FpwQf8gP9BSBpmgEZxQ6WJE2lAY4GHYkCjhAZYY4DHboFgyYimAPVDSzEPYeRARuiBd8PJmFuGaYB9QEaygr9CxiFBagLG-ud1-tOzosD37IFQvfoAtLNAy3sro2cAuosiSUkteMBuKUCG7aGBaG4BSSBUep2JYMVyCk37WiMyAMWw-uUjC236wHAzxNh13bz-g4mzy_9wAYs15-fkNcBxIEGtZUVUL50_aoBNPetAvagAzmzNqp0GoPF85kzvQmOGyXXJsLrAR7WvATP_AROz-wH4P0JKRvQCCLvNcJtkwGCBvwTNZsyt9kBXCRJGuori5kBOq8BlgRF9JAB_IMClQGlBNsEK52zAYFJGLkLuwhA0wTVErIBWhojtrQBy_YCFrcCzhkW3hKCHAtfFRabBrUEQukFkwUyiwmDGVquxALMygVp_QGRAifDC4kLIt4SCxaflQeNxieoAYUB7AEXnWLexQQzX74BHYo9shxq9JbRlgaguQujhgJux4LEoM0B7hL6BCyOB-oCKfsEYRarE5QDGfT0kPIE8AQ0HLIsqkS8Apl4sVLsAc4cuqwJTV2L4wdSyAPxBGT_xgPoqQQxwMUBMwwiC1pVVSBAVFWqKmsKOgkBFgIGAwQhAQRCggEXFBUyM4IQc-oCeUxMnwVdggI99AKAAdYQeKcGP4sCkAHwH_Ef8B_wH_Ef8B99siCyILEgsiCyILIgsiCyIIgB7SDtIO4gcN8BW70GFZkDEcsBGcAIHU1c3hTfFEBMKDJI5AcVjAFXoB42kAg3-iD6ILkCP5gCSWVkWMQUxBQLnQp2SkwuWiU_veESP81WGD8MwC8_e7YJPwJicj-tFoM-v6JLP2WVID_7wGU_A2v4PQYfFT8GXTk_n3WzPitwJD_tFSc_vIiuPeWXOz_CP3k_UhEYAQEBAQMBAQEBAQEDAQ8PCXgBEAQaXgpcChgKDQoCCAERAAAAAACAZkARL90kBkE4wUASEggAEAMQBhATEBIYAkIEGgIIBRoQCgQIAhACEgheX2FdEgJgEyIYChZrSWluWlBIekRNYXR5d1RudjczQUJRKAEiFQDIQpqAj_kzslxyWOFS35y8MJwknA",
+            "routeLabels": [
+                "DEFAULT_ROUTE"
+            ]
+        }
+    ],
+    "geocodingResults": {
+        "origin": {
+            "geocoderStatus": {},
+            "type": [
+                "premise"
+            ],
+            "placeId": "ChIJt2gt9v8J0YURXN2nYn7gDfM"
+        },
+        "destination": {
+            "geocoderStatus": {},
+            "type": [
+                "premise"
+            ],
+            "placeId": "ChIJNVMnY1IAzoUREwAPPgoK-G0"
+        }
+    }
+}
