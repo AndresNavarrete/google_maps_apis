@@ -1,6 +1,7 @@
-from googlemaps import Client
-from datetime import datetime
 import json
+from datetime import datetime
+
+from googlemaps import Client
 
 g = Client(key="AIzaSyBpTac3buTxXFoCNT6gMVBwpMWxKiRLOXI")
 
@@ -10,12 +11,9 @@ mode = "driving"
 departure_time = datetime.now()
 avoid = ""
 response = g.directions(
-         origin,
-         destination,
-         mode = mode,
-         departure_time = departure_time,
-         avoid= avoid)
+    origin, destination, mode=mode, departure_time=departure_time, avoid=avoid
+)
 
 
-with open('response.json', 'w') as f:
+with open("response.json", "w") as f:
     json.dump(response, f)

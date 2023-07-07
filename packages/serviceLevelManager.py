@@ -1,17 +1,20 @@
-from packages.enums import User_Modes, Google_Modes
+import datetime
+
+import dateparser
+
+from packages.enums import Google_Modes, User_Modes
 from packages.googleMaps import Directions
 from packages.inputParser import InputParser
 from packages.outputParser import OutputParser
 from packages.validator import Validator
-import dateparser
-import datetime
+
 
 class ServiceLevelManager:
     def __init__(self, input_path, api_key):
         self.input_path = input_path
         self.input = InputParser(input_path)
         self.validator = Validator(self.input)
-        time = datetime.datetime.now().strftime('%d_%m')
+        time = datetime.datetime.now().strftime("%d_%m")
         output_path = "resources/" + time + ".xlsx"
         self.output = OutputParser(output_path)
         self.directions = Directions(api_key)
@@ -40,7 +43,9 @@ class ServiceLevelManager:
         date = dateparser.parse(hour)
         only_bus = request["Modo"] == User_Modes.bus
 
-        response = self.directions.get_directions(origin, destination, mode, date, parameter_avoid, only_bus)
+        response = self.directions.get_directions(
+            origin, destination, mode, date, parameter_avoid, only_bus
+        )
         self.responses.append(response)
 
     def get_origin(self, request):

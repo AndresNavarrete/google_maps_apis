@@ -1,11 +1,15 @@
-from googlemaps import Client
-from packages.enums import Google_Modes
 import json
+
+from googlemaps import Client
+
+from packages.enums import Google_Modes
+
 
 ### Docs https://github.com/googlemaps/google-maps-services-python
 class GoogleMaps:
     def __init__(self, api_key):
         self.gmaps = Client(key=api_key)
+
 
 class Geocoder(GoogleMaps):
     def get_coordinates(self, location):
@@ -17,7 +21,7 @@ class Geocoder(GoogleMaps):
             "location_input": location,
             "lat": lat,
             "lng": lng,
-            "formatted_address": formatted_address
+            "formatted_address": formatted_address,
         }
         return coord_response
 
@@ -25,15 +29,22 @@ class Geocoder(GoogleMaps):
         geocode_result = self.gmaps.geocode(location)
         return geocode_result
 
+
 class Directions(GoogleMaps):
     # https://developers.google.com/maps/documentation/directions/get-directions
-    def get_directions(self, origin, destination, mode, departure_time, parameter_avoid, only_bus):
-        directions_response = self.get_directions_response(origin, destination, mode, departure_time, parameter_avoid, only_bus)
+    def get_directions(
+        self, origin, destination, mode, departure_time, parameter_avoid, only_bus
+    ):
+        directions_response = self.get_directions_response(
+            origin, destination, mode, departure_time, parameter_avoid, only_bus
+        )
         if not directions_response:
             return self.get_default_response()
         trip = directions_response[0]["legs"][0]
         steps = self.get_steps_information(trip, mode)
-        wait_time, walk_time, travel_time = self.get_desagregated_time(trip, steps, mode)
+        wait_time, walk_time, travel_time = self.get_desagregated_time(
+            trip, steps, mode
+        )
 
         response = {
             "distance": trip["distance"]["value"],
@@ -48,11 +59,13 @@ class Directions(GoogleMaps):
             "walk_time": walk_time,
             "travel_time": travel_time,
             "transfers": self.get_transfer_number(steps),
-            "steps": steps
+            "steps": steps,
         }
         return response
 
-    def get_directions_response(self, origin, destination, mode, departure_time, parameter_avoid, only_bus=False):
+    def get_directions_response(
+        self, origin, destination, mode, departure_time, parameter_avoid, only_bus=False
+    ):
         if only_bus:
             transit_mode = Google_Modes.bus
         else:
@@ -63,13 +76,13 @@ class Directions(GoogleMaps):
             mode=mode,
             transit_mode=transit_mode,
             departure_time=departure_time,
-            avoid=parameter_avoid
+            avoid=parameter_avoid,
         )
         self.save_raw_response(directions_response)
         return directions_response
 
     def save_raw_response(self, response):
-        with open('resources/raw/directions.json', 'w') as outfile:
+        with open("resources/raw/directions.json", "w") as outfile:
             json.dump(response, outfile)
 
     def get_default_response(self):
@@ -86,7 +99,7 @@ class Directions(GoogleMaps):
             "walk_time": None,
             "travel_time": None,
             "transfers": None,
-            "steps": []
+            "steps": [],
         }
 
     def get_steps_information(self, trip, mode):
@@ -118,8 +131,16 @@ class Directions(GoogleMaps):
         if mode in ("driving", "walking"):
             travel_time = trip["duration_in_traffic"]["value"]
         if mode == "transit":
-            walk_time = sum([step["duration"] for step in steps if step["travel_mode"] == "WALKING"])
-            travel_time = sum([step["duration"] for step in steps if step["travel_mode"] in ("TRANSIT", "DRIVING")])
+            walk_time = sum(
+                [step["duration"] for step in steps if step["travel_mode"] == "WALKING"]
+            )
+            travel_time = sum(
+                [
+                    step["duration"]
+                    for step in steps
+                    if step["travel_mode"] in ("TRANSIT", "DRIVING")
+                ]
+            )
             wait_time = max(trip["duration"]["value"] - walk_time - travel_time, 0)
         return wait_time, walk_time, travel_time
 

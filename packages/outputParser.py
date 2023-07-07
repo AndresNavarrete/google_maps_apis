@@ -6,7 +6,7 @@ class OutputParser:
         self.output_path = output_path
         self.steps = []
         self.trips = []
-    
+
     def add_trip(self, request, response):
         new_trip = {
             "id": request["ID"],
@@ -28,7 +28,7 @@ class OutputParser:
         self.trips.append(new_trip)
         for step in response["steps"]:
             self.add_step(step, request["ID"])
-    
+
     def add_step(self, step, trip_id):
         new_step = {
             "viaje_id": trip_id,
@@ -36,13 +36,13 @@ class OutputParser:
             "distancia_m": step["distance"],
             "tiempo_total_seg": step["duration"],
             "tiempo_espera_seg": step["headway"],
-            "indicacion": step["instruction"]
+            "indicacion": step["instruction"],
         }
         self.steps.append(new_step)
-    
+
     def write_excel(self):
         trips = pandas.DataFrame(self.trips)
         steps = pandas.DataFrame(self.steps)
-        with pandas.ExcelWriter(self.output_path) as writer:  
-            trips.to_excel(writer, sheet_name='Viajes')
-            steps.to_excel(writer, sheet_name='Etapas')
+        with pandas.ExcelWriter(self.output_path) as writer:
+            trips.to_excel(writer, sheet_name="Viajes")
+            steps.to_excel(writer, sheet_name="Etapas")

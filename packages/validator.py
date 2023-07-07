@@ -9,7 +9,7 @@ class Validator:
             User_Modes.car,
             User_Modes.transit,
             User_Modes.bus,
-            User_Modes.walk
+            User_Modes.walk,
         ]
 
     def validate_input(self):
@@ -24,20 +24,20 @@ class Validator:
             return
         msg = "Invalid mode. id {} mode {}".format(request["ID"], request["Modo"])
         raise ValueError(msg)
-    
+
     def validate_id(self, request):
         if request["ID"] in self.ids:
             msg = "Duplicated ID. id {}".format(request["ID"])
             raise ValueError(msg)
         self.ids.append(request["ID"])
-    
+
     def validate_origin(self, request):
         if request["Origen_str"] is not None:
             return
         if request["Origen_Lat"] is None or request["Origen_Lng"] is None:
             msg = "Invalid origin. id {}".format(request["ID"])
             raise ValueError(msg)
-    
+
     def validate_destination(self, request):
         if request["Destino_str"] is not None:
             return
