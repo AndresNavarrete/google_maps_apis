@@ -1,14 +1,14 @@
 import pandas
 
-class OutputParser:
 
-    def __init__(self, outputPath):
-        self.outputPath = outputPath
+class OutputParser:
+    def __init__(self, output_path):
+        self.output_path = output_path
         self.steps = []
         self.trips = []
     
-    def addTrip(self, request, response):
-        newTrip = {
+    def add_trip(self, request, response):
+        new_trip = {
             "id": request["ID"],
             "modo": request["Modo"],
             "hora": request["Hora"],
@@ -25,25 +25,24 @@ class OutputParser:
             "tiempo_caminata_seg": response["walk_time"],
             "tiempo_viaje_seg": response["travel_time"],
         }
-        self.trips.append(newTrip)
+        self.trips.append(new_trip)
         for step in response["steps"]:
-            self.addStep(step, request["ID"])
+            self.add_step(step, request["ID"])
     
-    def addStep(self, step, tripId):
-        newStep = {
-            "viaje_id": tripId,
+    def add_step(self, step, trip_id):
+        new_step = {
+            "viaje_id": trip_id,
             "modo": step["travel_mode"],
             "distancia_m": step["distance"],
             "tiempo_total_seg": step["duration"],
             "tiempo_espera_seg": step["headway"],
             "indicacion": step["instruction"]
         }
-        self.steps.append(newStep)
+        self.steps.append(new_step)
     
-    def writeExcel(self):
+    def write_excel(self):
         trips = pandas.DataFrame(self.trips)
         steps = pandas.DataFrame(self.steps)
-        with pandas.ExcelWriter(self.outputPath) as writer:  
+        with pandas.ExcelWriter(self.output_path) as writer:  
             trips.to_excel(writer, sheet_name='Viajes')
             steps.to_excel(writer, sheet_name='Etapas')
-

@@ -3,13 +3,12 @@ import json
 
 
 class InputParser:
-
-    def __init__(self, inputPath):
-        self.inputPath = inputPath
-        self.inputData = None
-        self.loadInput()
+    def __init__(self, input_path):
+        self.input_path = input_path
+        self.input_data = None
+        self.load_input()
     
-    def loadInput(self):
-        df = pandas.read_excel(self.inputPath, sheet_name= "Viajes")
-        input = df.to_json(orient='records')
-        self.requests = json.loads(input)
+    def load_input(self):
+        df = pandas.read_excel(self.input_path, sheet_name="Viajes")
+        input_json = df.to_json(orient='records')
+        self.requests = json.loads(input_json)

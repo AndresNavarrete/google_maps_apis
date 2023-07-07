@@ -1,4 +1,3 @@
-
 from packages.enums import User_Modes, Google_Modes
 from packages.googleMaps import Directions
 from packages.inputParser import InputParser
@@ -8,56 +7,53 @@ import dateparser
 import datetime
 
 class ServiceLevelManager:
-
-    def __init__(self, inputPath, apiKey):
-        self.inputPath = inputPath
-        self.input = InputParser(inputPath)
+    def __init__(self, input_path, api_key):
+        self.input_path = input_path
+        self.input = InputParser(input_path)
         self.validator = Validator(self.input)
         time = datetime.datetime.now().strftime('%d_%m')
-        outputPath = "resources/" + time + ".xlsx"
-        self.output = OutputParser(outputPath)
-        self.directions = Directions(apiKey)
+        output_path = "resources/" + time + ".xlsx"
+        self.output = OutputParser(output_path)
+        self.directions = Directions(api_key)
         self.responses = []
 
     def execute(self):
-        self.validateInput()
-        self.getAllServiceLevels()
-        self.fillOutput()
-        self.writeOutput()
+        self.validate_input()
+        self.get_all_service_levels()
+        self.fill_output()
+        self.write_output()
 
-    def validateInput(self):
-        self.validator.validateInput()
+    def validate_input(self):
+        self.validator.validate_input()
 
-    def getAllServiceLevels(self):
+    def get_all_service_levels(self):
         for request in self.input.requests:
-            self.getServiceLevel(request)
+            self.get_service_level(request)
             print("Processed request {}".format(request["ID"]))
 
-
-    def getServiceLevel(self, request):
-        origin = self.getOrigin(request)
-        destination = self.getDestination(request)
-        mode = self.getMode(request)
+    def get_service_level(self, request):
+        origin = self.get_origin(request)
+        destination = self.get_destination(request)
+        mode = self.get_mode(request)
         hour = request["Hora"]
         parameter_avoid = request["Parameter_avoid"]
         date = dateparser.parse(hour)
         only_bus = request["Modo"] == User_Modes.bus
 
-        response = self.directions.getDirections(origin, destination, mode, date, parameter_avoid,  only_bus)
+        response = self.directions.get_directions(origin, destination, mode, date, parameter_avoid, only_bus)
         self.responses.append(response)
 
-
-    def getOrigin(self, request):
-        if request["Origen_str"] == None:
+    def get_origin(self, request):
+        if request["Origen_str"] is None:
             return (request["Origen_Lat"], request["Origen_Lng"])
         return request["Origen_str"]
 
-    def getDestination(self, request):
-        if request["Destino_str"] == None:
+    def get_destination(self, request):
+        if request["Destino_str"] is None:
             return (request["Destino_Lat"], request["Destino_Lng"])
         return request["Destino_str"]
 
-    def getMode(self, request):
+    def get_mode(self, request):
         if request["Modo"] == User_Modes.car:
             mode = Google_Modes.car
         if request["Modo"] == User_Modes.transit or request["Modo"] == User_Modes.bus:
@@ -67,9 +63,9 @@ class ServiceLevelManager:
 
         return mode
 
-    def fillOutput(self):
+    def fill_output(self):
         for request, response in zip(self.input.requests, self.responses):
-            self.output.addTrip(request, response)
+            self.output.add_trip(request, response)
 
-    def writeOutput(self):
-        self.output.writeExcel()
+    def write_output(self):
+        self.output.write_excel()

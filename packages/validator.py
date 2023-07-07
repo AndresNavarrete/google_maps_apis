@@ -2,9 +2,8 @@ from packages.enums import User_Modes
 
 
 class Validator:
-
-    def __init__(self, input):
-        self.input = input
+    def __init__(self, input_data):
+        self.input_data = input_data
         self.ids = []
         self.modes = [
             User_Modes.car,
@@ -13,36 +12,35 @@ class Validator:
             User_Modes.walk
         ]
 
-    def validateInput(self):
-        for request in self.input.requests:
-            self.validateMode(request)
-            self.validateId(request)
-            self.validateOrigin(request)
-            self.validateDestination(request)
+    def validate_input(self):
+        for request in self.input_data.requests:
+            self.validate_mode(request)
+            self.validate_id(request)
+            self.validate_origin(request)
+            self.validate_destination(request)
 
-    def validateMode(self, request):
+    def validate_mode(self, request):
         if request["Modo"] in self.modes:
             return
         msg = "Invalid mode. id {} mode {}".format(request["ID"], request["Modo"])
         raise ValueError(msg)
     
-    def validateId(self, request):
+    def validate_id(self, request):
         if request["ID"] in self.ids:
             msg = "Duplicated ID. id {}".format(request["ID"])
             raise ValueError(msg)
         self.ids.append(request["ID"])
     
-    def validateOrigin(self, request):
-        if request["Origen_str"] != None:
+    def validate_origin(self, request):
+        if request["Origen_str"] is not None:
             return
-        if request["Origen_Lat"] == None or request["Origen_Lng"] == None:
+        if request["Origen_Lat"] is None or request["Origen_Lng"] is None:
             msg = "Invalid origin. id {}".format(request["ID"])
             raise ValueError(msg)
     
-    def validateDestination(self, request):
-        if request["Destino_str"] != None:
+    def validate_destination(self, request):
+        if request["Destino_str"] is not None:
             return
-        if request["Destino_Lat"] == None or request["Destino_Lng"] == None:
+        if request["Destino_Lat"] is None or request["Destino_Lng"] is None:
             msg = "Invalid destination. id {}".format(request["ID"])
             raise ValueError(msg)
-        
