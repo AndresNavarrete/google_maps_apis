@@ -5,12 +5,7 @@ class Validator:
     def __init__(self, input_data):
         self.input_data = input_data
         self.ids = []
-        self.modes = [
-            User_Modes.car,
-            User_Modes.transit,
-            User_Modes.bus,
-            User_Modes.walk,
-        ]
+        self.modes = User_Modes.list()
 
     def validate_input(self):
         for request in self.input_data.requests:
