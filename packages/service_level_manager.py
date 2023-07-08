@@ -59,14 +59,17 @@ class ServiceLevelManager:
         return request["Destino_str"]
 
     def get_mode(self, request):
-        if request["Modo"] == User_Modes.car:
+        if request["Modo"] == User_Modes.car.value:
             mode = Google_Modes.car
-        if request["Modo"] == User_Modes.transit or request["Modo"] == User_Modes.bus:
+        if (
+            request["Modo"] == User_Modes.transit.value
+            or request["Modo"] == User_Modes.bus.value
+        ):
             mode = Google_Modes.transit
-        if request["Modo"] == User_Modes.walk:
+        if request["Modo"] == User_Modes.walk.value:
             mode = Google_Modes.walk
 
-        return mode
+        return mode.value
 
     def fill_output(self):
         for request, response in zip(self.input.requests, self.responses):
