@@ -2,8 +2,8 @@ import datetime
 
 import dateparser
 
-from packages.enums import Google_Modes, User_Modes
 from packages.clients.directions import Directions
+from packages.enums import Google_Modes, User_Modes
 from packages.input_parser import InputParser
 from packages.output_parser import OutputParser
 from packages.validator import Validator

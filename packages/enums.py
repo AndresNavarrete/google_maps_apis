@@ -1,15 +1,15 @@
 from enum import Enum
 
-class ExtendedEnum(Enum):
 
+class ExtendedEnum(Enum):
     @classmethod
     def list(cls):
         return list(map(lambda c: c.value, cls))
 
     @classmethod
     def string_list(cls):
-        return ','.join(cls.list())
-    
+        return ",".join(cls.list())
+
 
 class Google_Modes(ExtendedEnum):
     car = "driving"
@@ -17,11 +17,13 @@ class Google_Modes(ExtendedEnum):
     bus = "bus"
     walk = "walking"
 
+
 class User_Modes(ExtendedEnum):
     car = "auto"
     transit = "tp"
     bus = "bus"
     walk = "caminata"
+
 
 class Field_Masks(ExtendedEnum):
     route_duration = "routes.duration"
