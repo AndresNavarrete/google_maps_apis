@@ -3,7 +3,7 @@ import requests
 from packages.clients.base_client import BaseClient
 from packages.enums import Field_Masks
 
-
+# https://developers.google.com/maps/documentation/routes
 class Routes(BaseClient):
     def get_route(self, origin, destination, avoidTolls=False):
         url = "https://routes.googleapis.com/directions/v2:computeRoutes"
@@ -14,7 +14,7 @@ class Routes(BaseClient):
             headers=headers,
             json=payload,
         )
-        return response
+        return response.json()
 
     def build_headers(self):
         FIELD_MASK = Field_Masks.string_list()
@@ -29,7 +29,7 @@ class Routes(BaseClient):
         payload["origin"] = self.build_address(origin)
         payload["destination"] = self.build_address(destination)
         payload["travelMode"] = "DRIVE"
-        payload["routingPreference"] = "TRAFFIC_AWARE"
+        payload["routingPreference"] = "TRAFFIC_AWARE_OPTIMAL"
         payload["extraComputations"] = ["TOLLS"]
         payload["routeModifiers"] = self.build_route_modifiers(avoidTolls)
         return payload

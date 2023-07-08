@@ -6,7 +6,7 @@ if __name__ == "__main__":
     api_key = "AIzaSyBpTac3buTxXFoCNT6gMVBwpMWxKiRLOXI"
     api = Routes(api_key)
     r = api.get_route(
-        origin='Pachuca, Mexico',
-        destination='Ciudad de México, México'
+        origin='2da B Juárez 102, Los Jales, Ex Hacienda de Coscotitlán, 42064 Pachuca de Soto, Hgo., Mexico',
+        destination='Calz. de Tlalpan 3465, Sta. Úrsula Coapa, Coyoacán, 04650 Ciudad de México, CDMX, Mexico'
     )
     print(r.json())
