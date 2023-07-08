@@ -8,6 +8,7 @@ googlemaps = "*"
 pandas = "*"
 dateparser = "*"
 openpyxl = "*"
+requests = "*"
 
 [dev-packages]
 
