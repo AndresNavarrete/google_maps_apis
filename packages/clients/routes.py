@@ -36,9 +36,9 @@ class Routes(BaseClient):
         payload["origin"] = self.build_address(origin)
         payload["destination"] = self.build_address(destination)
         payload["departureTime"] = self.build_time(departureTime, timezone)
-        payload["travelMode"] = "DRIVE"
-        payload["routingPreference"] = "TRAFFIC_AWARE_OPTIMAL"
-        payload["extraComputations"] = ["TOLLS"]
+        payload["travelMode"] = self.build_travel_mode()
+        payload["routingPreference"] = self.build_routing_preferences()
+        payload["extraComputations"] = self.build_extra_computations()
         payload["routeModifiers"] = self.build_route_modifiers(avoidTolls)
         return payload
 
@@ -59,6 +59,19 @@ class Routes(BaseClient):
             timezone = DEFAULT_TIMEZONE
         tz = pytz.timezone(timezone)
         return datetime.replace(tzinfo=pytz.utc).astimezone(tz)
+
+    def build_travel_mode(self):
+        DEFAULT_MODE = "DRIVE"
+        return DEFAULT_MODE
+
+    def build_routing_preferences(self):
+        DEFAUTLT_TRAFFIC = "TRAFFIC_AWARE_OPTIMAL"
+        return DEFAUTLT_TRAFFIC
+
+    def build_extra_computations(self):
+        DEFAULT = "TOLLS"
+        extra_computations = [DEFAULT]
+        return extra_computations
 
     def build_route_modifiers(self, avoidTolls):
         route_modifiers = dict()
