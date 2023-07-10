@@ -50,3 +50,6 @@ class TripRequest:
             if self.mode == User_Modes.walk.value:
                 google_mode = Google_Modes.walk
             return google_mode.value
+
+    def use_bus(self):
+        return self.mode == User_Modes.bus

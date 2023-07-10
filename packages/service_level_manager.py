@@ -3,7 +3,6 @@ import datetime
 import dateparser
 
 from packages.clients.directions import Directions
-from packages.enums import Google_Modes, User_Modes
 from packages.input_parser import InputParser
 from packages.output_parser import OutputParser
 from packages.validator import Validator
@@ -41,7 +40,7 @@ class ServiceLevelManager:
         hour = trip.departure_time
         parameter_avoid = trip.avoid_tolls
         date = dateparser.parse(hour)
-        only_bus = trip.mode == User_Modes.bus
+        only_bus = trip.use_bus()
 
         response = self.directions.get_directions(
             origin, destination, mode, date, parameter_avoid, only_bus
