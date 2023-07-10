@@ -1,5 +1,3 @@
-import dateparser
-
 from packages.providers.base_provider import BaseProvider
 
 
@@ -9,9 +7,10 @@ class RoutesProvider(BaseProvider):
         destination = self.get_destination(trip)
         departureTime = trip.departure_time
         timezone = trip.timezone
-        avoidTolls = trip.geget_avoid_tolls()
+        avoidTolls = trip.get_avoid_tolls()
 
-        response = self.directions.get_response(
+        response = self.client.get_response(
             origin, destination, departureTime, timezone, avoidTolls
         )
+        print(response)
         self.responses.append(response)

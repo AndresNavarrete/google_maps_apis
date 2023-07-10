@@ -4,7 +4,7 @@ from abc import ABC
 class BaseProvider(ABC):
     def __init__(self, input_parser, client) -> None:
         self.input = input_parser
-        self.directions = client
+        self.client = client
         self.responses = list()
 
     def execute(self):

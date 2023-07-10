@@ -12,35 +12,14 @@ class Routes(BaseClient):
     def get_response(
         self, origin, destination, departureTime=None, timezone=None, avoidTolls=False
     ):
-        response = self.get_response(
+        response = self.get_raw_response(
             origin, destination, departureTime, timezone, avoidTolls
         )
         return self.get_response_model(response)
 
-    def get_response_model(self, response):
-        meters = response["routes"][0]["distanceMeters"]
-        duration = response["routes"][0]["duration"]
-        seconds = self.get_duration_seconds(duration)
-        tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
-        toll_amount = tollInfo["estimatedPrice"][0]["units"]
-        toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
-        return RouteResponse(
-            meters=int(meters),
-            seconds=seconds,
-            toll_amount=int(toll_amount),
-            toll_currency=toll_currency,
-        )
 
-    def get_duration_seconds(self, duration):
-        value = int(duration[:-1])
-        if "s" in duration:
-            return value
-        if "m" in duration:
-            return 60 * value
-        if "h" in duration:
-            return 3600 * value
 
-    def get_response(self, origin, destination, departureTime, timezone, avoidTolls):
+    def get_raw_response(self, origin, destination, departureTime, timezone, avoidTolls):
         url = "https://routes.googleapis.com/directions/v2:computeRoutes"
         headers = self.build_headers()
         payload = self.build_payload(
@@ -107,3 +86,26 @@ class Routes(BaseClient):
         route_modifiers = dict()
         route_modifiers["avoidTolls"] = avoidTolls
         return route_modifiers
+
+    def get_response_model(self, response):
+        meters = response["routes"][0]["distanceMeters"]
+        duration = response["routes"][0]["duration"]
+        seconds = self.get_duration_seconds(duration)
+        tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
+        toll_amount = tollInfo["estimatedPrice"][0]["units"]
+        toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
+        return RouteResponse(
+            meters=int(meters),
+            seconds=seconds,
+            toll_amount=int(toll_amount),
+            toll_currency=toll_currency,
+        )
+
+    def get_duration_seconds(self, duration):
+        value = int(duration[:-1])
+        if "s" in duration:
+            return value
+        if "m" in duration:
+            return 60 * value
+        if "h" in duration:
+            return 3600 * value

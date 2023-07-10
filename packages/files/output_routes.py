@@ -15,8 +15,10 @@ class OutputRoutes(BaseOutput):
             rows.append(merged_data)
         return rows
 
-    def join_results(trip, result):
-        return {**trip, **result}
+    def join_results(self, trip, result):
+        trip_vars = vars(trip)
+        result_vars = vars(result)
+        return {**trip_vars, **result_vars}
 
     def write_excel(self, data):
         dataframe = pd.DataFrame(data)

@@ -13,7 +13,7 @@ class DirectionsProvider(BaseProvider):
         date = dateparser.parse(hour)
         only_bus = trip.use_bus()
 
-        response = self.directions.get_response(
+        response = self.client.get_response(
             origin, destination, mode, date, parameter_avoid, only_bus
         )
         self.responses.append(response)

@@ -55,6 +55,8 @@ class Trip:
         return self.mode == User_Modes.bus
 
     def get_avoid_tolls(self):
+        if not self.avoid:
+            return False
         if "tolls" in self.avoid:
             return True
         return False
