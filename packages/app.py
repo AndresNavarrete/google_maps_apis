@@ -6,6 +6,7 @@ from packages.files.input_parser import InputParser
 from packages.files.output_directions import OutputDirections
 from packages.files.output_routes import OutputRoutes
 from packages.providers.directions_provider import DirectionsProvider
+from packages.providers.routes_providers import RoutesProvider
 from packages.vaiidation.validator import Validator
 
 
@@ -38,14 +39,25 @@ class App:
     def process_direction_output(self, trips, results):
         time = self.get_time_string()
         output_path = f"resources/directions_{time}.xlsx"
-        self.output_directions = OutputDirections(output_path)
-        self.output_directions.export(trips, results)
+        output = OutputDirections(output_path)
+        output.export(trips, results)
 
     def get_time_string(self):
         return datetime.now().strftime("%Y-%m-%d_at_%H:%M")
 
-    def set_routes(self):
+    def execute_routes(self):
+        trips = self.input_parser.trips
+        results = self.get_routes_results()
+        self.process_routes_output(trips, results)
+
+    def get_directions_results(self):
+        routes = Routes(self.api_key)
+        manager = RoutesProvider(self.input_parser, routes)
+        manager.execute()
+        return manager.responses
+
+    def process_direction_output(self, trips, results):
         time = self.get_time_string()
         output_path = f"resources/routes_{time}.xlsx"
-        self.output_directions = OutputRoutes(output_path)
-        self.directions = Routes(self.api_key)
+        output = OutputRoutes(output_path)
+        output.export(trips, results)
