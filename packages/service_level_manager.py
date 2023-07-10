@@ -4,7 +4,7 @@ import dateparser
 
 from packages.clients.directions import Directions
 from packages.files.output_directions import OutputDirections
-from packages.input_parser import InputParser
+from packages.files.input_parser import InputParser
 from packages.validator import Validator
 
 
