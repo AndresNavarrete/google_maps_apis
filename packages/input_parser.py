@@ -34,9 +34,9 @@ class InputParser:
             origen_address=row["Origen_str"],
             destination_lat=row["Destino_Lat"],
             destination_lng=row["Destino_Lng"],
-            destination_adress=row["Destino_str"],
-            modo=row["Modo"],
-            hora=row["Hora"],
+            destination_address=row["Destino_str"],
+            mode=row["Modo"],
+            departure_time=row["Hora"],
             id_viaje=row["ID_Viaje"],
             avoid_tolls=row["Parameter_avoid"],
         )

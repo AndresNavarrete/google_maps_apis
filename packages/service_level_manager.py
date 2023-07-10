@@ -30,46 +30,33 @@ class ServiceLevelManager:
         self.validator.validate_input()
 
     def get_all_service_levels(self):
-        for request in self.input.requests:
-            self.get_service_level(request)
-            print("Processed request {}".format(request["ID"]))
+        for trip in self.input.trips:
+            self.get_service_level(trip)
+            print(f"Processed request {trip.id}")
 
-    def get_service_level(self, request):
-        origin = self.get_origin(request)
-        destination = self.get_destination(request)
-        mode = self.get_mode(request)
-        hour = request["Hora"]
-        parameter_avoid = request["Parameter_avoid"]
+    def get_service_level(self, trip):
+        origin = self.get_origin(trip)
+        destination = self.get_destination(trip)
+        mode = trip.get_google_mode()
+        hour = trip.departure_time
+        parameter_avoid = trip.avoid_tolls
         date = dateparser.parse(hour)
-        only_bus = request["Modo"] == User_Modes.bus
+        only_bus = trip.mode == User_Modes.bus
 
         response = self.directions.get_directions(
             origin, destination, mode, date, parameter_avoid, only_bus
         )
         self.responses.append(response)
 
-    def get_origin(self, request):
-        if request["Origen_str"] is None:
-            return (request["Origen_Lat"], request["Origen_Lng"])
-        return request["Origen_str"]
+    def get_origin(self, trip):
+        if trip.has_origin_address():
+            return trip.origen_address
+        return trip.get_origin_coordinates()
 
-    def get_destination(self, request):
-        if request["Destino_str"] is None:
-            return (request["Destino_Lat"], request["Destino_Lng"])
-        return request["Destino_str"]
-
-    def get_mode(self, request):
-        if request["Modo"] == User_Modes.car.value:
-            mode = Google_Modes.car
-        if (
-            request["Modo"] == User_Modes.transit.value
-            or request["Modo"] == User_Modes.bus.value
-        ):
-            mode = Google_Modes.transit
-        if request["Modo"] == User_Modes.walk.value:
-            mode = Google_Modes.walk
-
-        return mode.value
+    def get_destination(self, trip):
+        if trip.has_destination_address():
+            return trip.destination_address
+        return trip.get_destination_coordinates()
 
     def fill_output(self):
         for request, response in zip(self.input.requests, self.responses):
