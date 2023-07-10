@@ -1,7 +1,6 @@
-from packages.service_level_manager import ServiceLevelManager
+from packages.app import App
 
 if __name__ == "__main__":
-    path = "resources/request.xlsx"
     api_key = "AIzaSyBpTac3buTxXFoCNT6gMVBwpMWxKiRLOXI"
-    app = ServiceLevelManager(path, api_key)
+    app = App(api_key=api_key, input_file="request.xlsx", service_name="")
     app.execute()
