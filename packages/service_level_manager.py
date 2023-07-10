@@ -5,7 +5,7 @@ import dateparser
 from packages.clients.directions import Directions
 from packages.files.output_directions import OutputDirections
 from packages.files.input_parser import InputParser
-from packages.validator import Validator
+from packages.vaiidation.validator import Validator
 
 
 class ServiceLevelManager:
