@@ -29,4 +29,3 @@ class Field_Masks(ExtendedEnum):
     route_duration = "routes.duration"
     route_meters = "routes.distanceMeters"
     route_tolls = "routes.travelAdvisory.tollInfo"
-    legs_tolls = "routes.legs.travelAdvisory.tollInfo"

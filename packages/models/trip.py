@@ -15,6 +15,7 @@ class Trip:
     destination_address: str
     mode: str
     departure_time: str
+    timezone: str
     avoid: str
 
     def has_origin_address(self):
@@ -51,10 +52,8 @@ class Trip:
 
     def use_bus(self):
         return self.mode == User_Modes.bus
-    
+
     def get_avoid_tolls(self):
-        if 'tolls' in self.avoid:
+        if "tolls" in self.avoid:
             return True
         return False
-
-
