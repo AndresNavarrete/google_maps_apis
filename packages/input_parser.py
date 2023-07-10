@@ -29,6 +29,7 @@ class InputParser:
     def get_trip_requests(self, row):
         return Trip(
             id=row["ID"],
+            id_viaje=row["ID_Viaje"],
             origen_lat=row["Origen_Lat"],
             origen_lng=row["Origen_Lng"],
             origen_address=row["Origen_str"],
@@ -37,6 +38,6 @@ class InputParser:
             destination_address=row["Destino_str"],
             mode=row["Modo"],
             departure_time=row["Hora"],
-            id_viaje=row["ID_Viaje"],
+            timezone=row["Timezone"],
             avoid=row["Parameter_avoid"],
         )

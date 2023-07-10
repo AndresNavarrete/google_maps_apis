@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Optional
 
 from packages.enums import Google_Modes, User_Modes
 
@@ -15,7 +16,7 @@ class Trip:
     destination_address: str
     mode: str
     departure_time: str
-    timezone: str
+    timezone: Optional[str]
     avoid: str
 
     def has_origin_address(self):
