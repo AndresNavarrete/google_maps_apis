@@ -2,7 +2,7 @@ import json
 
 import pandas
 
-from packages.models.trip_request import TripRequest
+from packages.models.trip import Trip
 
 
 class InputParser:
@@ -27,7 +27,7 @@ class InputParser:
             self.trips.append(new_trip)
 
     def get_trip_requests(self, row):
-        return TripRequest(
+        return Trip(
             id=row["ID"],
             origen_lat=row["Origen_Lat"],
             origen_lng=row["Origen_Lng"],
@@ -38,5 +38,5 @@ class InputParser:
             mode=row["Modo"],
             departure_time=row["Hora"],
             id_viaje=row["ID_Viaje"],
-            avoid_tolls=row["Parameter_avoid"],
+            avoid=row["Parameter_avoid"],
         )

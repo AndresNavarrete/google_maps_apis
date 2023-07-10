@@ -38,7 +38,7 @@ class ServiceLevelManager:
         destination = self.get_destination(trip)
         mode = trip.get_google_mode()
         hour = trip.departure_time
-        parameter_avoid = trip.avoid_tolls
+        parameter_avoid = trip.avoid
         date = dateparser.parse(hour)
         only_bus = trip.use_bus()
 

@@ -4,8 +4,9 @@ from packages.enums import Google_Modes, User_Modes
 
 
 @dataclass
-class TripRequest:
+class Trip:
     id: str
+    id_viaje: str
     origen_lat: float
     origen_lng: float
     origen_address: str
@@ -14,8 +15,7 @@ class TripRequest:
     destination_address: str
     mode: str
     departure_time: str
-    id_viaje: str
-    avoid_tolls: bool
+    avoid: str
 
     def has_origin_address(self):
         if self.origen_address == None:
@@ -51,3 +51,10 @@ class TripRequest:
 
     def use_bus(self):
         return self.mode == User_Modes.bus
+    
+    def get_avoid_tolls(self):
+        if 'tolls' in self.avoid:
+            return True
+        return False
+
+
