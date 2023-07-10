@@ -1,7 +1,7 @@
-import pandas
+import pandas as pd 
 
 
-class OutputParser:
+class OutputDirections:
     def __init__(self, output_path):
         self.output_path = output_path
         self.steps = []
@@ -41,8 +41,8 @@ class OutputParser:
         self.steps.append(new_step)
 
     def write_excel(self):
-        trips = pandas.DataFrame(self.trips)
-        steps = pandas.DataFrame(self.steps)
-        with pandas.ExcelWriter(self.output_path) as writer:
+        trips = pd.DataFrame(self.trips)
+        steps = pd.DataFrame(self.steps)
+        with pd.ExcelWriter(self.output_path) as writer:
             trips.to_excel(writer, sheet_name="Viajes")
             steps.to_excel(writer, sheet_name="Etapas")

@@ -3,8 +3,8 @@ import datetime
 import dateparser
 
 from packages.clients.directions import Directions
+from packages.files.output_directions import OutputDirections
 from packages.input_parser import InputParser
-from packages.output_parser import OutputParser
 from packages.validator import Validator
 
 
@@ -15,7 +15,7 @@ class ServiceLevelManager:
         self.validator = Validator(self.input)
         time = datetime.datetime.now().strftime("%d_%m")
         output_path = "resources/" + time + ".xlsx"
-        self.output = OutputParser(output_path)
+        self.output = OutputDirections(output_path)
         self.directions = Directions(api_key)
         self.responses = []
 
