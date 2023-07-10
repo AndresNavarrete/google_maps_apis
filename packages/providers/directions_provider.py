@@ -1,5 +1,3 @@
-import datetime
-
 import dateparser
 
 from packages.providers.base_provider import BaseProvider
