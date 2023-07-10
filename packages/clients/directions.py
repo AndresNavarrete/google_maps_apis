@@ -4,7 +4,7 @@ from packages.enums import Google_Modes
 
 # https://developers.google.com/maps/documentation/directions
 class Directions(GoogleMapsSDK):
-    def get_directions(
+    def get_response(
         self, origin, destination, mode, departure_time, parameter_avoid, only_bus
     ):
         directions_response = self.get_directions_response(

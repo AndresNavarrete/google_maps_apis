@@ -1,11 +1,15 @@
-import pandas as pd 
+import pandas as pd
+
+from packages.files.base_output import BaseOutput
 
 
-class OutputDirections:
-    def __init__(self, output_path):
-        self.output_path = output_path
-        self.steps = []
-        self.trips = []
+class OutputDirections(BaseOutput):
+    def export(self, trips, results):
+        self.trips = list()
+        self.steps = list()
+        for request, response in zip(trips, results):
+            self.add_trip(request, response)
+        self.write_excel()
 
     def add_trip(self, request, response):
         new_trip = {

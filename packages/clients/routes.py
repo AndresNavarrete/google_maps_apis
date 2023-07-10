@@ -9,7 +9,7 @@ from packages.models.route_response import RouteResponse
 
 # https://developers.google.com/maps/documentation/routes
 class Routes(BaseClient):
-    def get_route(
+    def get_response(
         self, origin, destination, departureTime=None, timezone=None, avoidTolls=False
     ):
         response = self.get_response(
