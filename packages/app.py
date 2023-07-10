@@ -18,12 +18,20 @@ class App:
 
     def execute(self):
         self.set_inputs()
-        self.execute_directions()
+        self.execute_service()
 
     def set_inputs(self):
         path = f"resources/{self.input_file}"
         self.input_parser = InputParser(path)
         Validator(self.input_parser).validate_input()
+
+    def execute_service(self):
+        if self.service_name == "directions":
+            return self.execute_directions()
+        if self.service_name == "routes":
+            return self.execute_routes()
+        msg = f"Invalid service name: {self.service_name}. Try directions or routes"
+        raise ValueError(msg)
 
     def execute_directions(self):
         trips = self.input_parser.requests
@@ -50,13 +58,13 @@ class App:
         results = self.get_routes_results()
         self.process_routes_output(trips, results)
 
-    def get_directions_results(self):
+    def get_routes_results(self):
         routes = Routes(self.api_key)
         manager = RoutesProvider(self.input_parser, routes)
         manager.execute()
         return manager.responses
 
-    def process_direction_output(self, trips, results):
+    def process_routes_output(self, trips, results):
         time = self.get_time_string()
         output_path = f"resources/routes_{time}.xlsx"
         output = OutputRoutes(output_path)

@@ -17,9 +17,9 @@ class Routes(BaseClient):
         )
         return self.get_response_model(response)
 
-
-
-    def get_raw_response(self, origin, destination, departureTime, timezone, avoidTolls):
+    def get_raw_response(
+        self, origin, destination, departureTime, timezone, avoidTolls
+    ):
         url = "https://routes.googleapis.com/directions/v2:computeRoutes"
         headers = self.build_headers()
         payload = self.build_payload(
