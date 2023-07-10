@@ -10,9 +10,9 @@ class TripRequest:
     origen_address: str
     destination_lat: float
     destination_lng: float
-    destination_adress: str
-    modo: str
-    hora: str
+    destination_address: str
+    mode: str
+    departure_time: str
     id_viaje: str
     avoid_tolls: bool
 
@@ -24,9 +24,9 @@ class TripRequest:
         return True
 
     def has_destination_address(self):
-        if self.destination_adress == None:
+        if self.destination_address == None:
             return False
-        if self.destination_adress == "":
+        if self.destination_address == "":
             return False
         return True
     
@@ -37,11 +37,16 @@ class TripRequest:
         return (self.destination_lat, self.destination_lng)
 
     def get_user_mode(self):
-        for mode in User_Modes.list():
-            if self.modo == mode.value:
-                return mode.value
+        return User_Modes(self.mode).name
 
     def get_google_mode(self):
-        for mode in Google_Modes.list():
-            if self.modo == mode.value:
-                return mode.value
+            if self.mode == User_Modes.car.value:
+                google_mode = Google_Modes.car
+            if (
+                self.mode == User_Modes.transit.value
+                or self.mode == User_Modes.bus.value
+            ):
+                google_mode = Google_Modes.transit
+            if self.mode == User_Modes.walk.value:
+                google_mode = Google_Modes.walk
+            return google_mode.value
