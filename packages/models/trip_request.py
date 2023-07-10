@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 from packages.enums import Google_Modes, User_Modes
 
+
 @dataclass
 class TripRequest:
     id: str
@@ -29,10 +30,10 @@ class TripRequest:
         if self.destination_address == "":
             return False
         return True
-    
+
     def get_origin_coordinates(self):
         return (self.origen_lat, self.origen_lng)
-    
+
     def get_destination_coordinates(self):
         return (self.destination_lat, self.destination_lng)
 
@@ -40,16 +41,13 @@ class TripRequest:
         return User_Modes(self.mode).name
 
     def get_google_mode(self):
-            if self.mode == User_Modes.car.value:
-                google_mode = Google_Modes.car
-            if (
-                self.mode == User_Modes.transit.value
-                or self.mode == User_Modes.bus.value
-            ):
-                google_mode = Google_Modes.transit
-            if self.mode == User_Modes.walk.value:
-                google_mode = Google_Modes.walk
-            return google_mode.value
+        if self.mode == User_Modes.car.value:
+            google_mode = Google_Modes.car
+        if self.mode == User_Modes.transit.value or self.mode == User_Modes.bus.value:
+            google_mode = Google_Modes.transit
+        if self.mode == User_Modes.walk.value:
+            google_mode = Google_Modes.walk
+        return google_mode.value
 
     def use_bus(self):
         return self.mode == User_Modes.bus
