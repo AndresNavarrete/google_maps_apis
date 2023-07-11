@@ -42,8 +42,8 @@ class Routes(BaseClient):
 
     def build_payload(self, origin, destination, departureTime, timezone, avoidTolls):
         payload = dict()
-        payload["origin"] = self.build_address(origin)
-        payload["destination"] = self.build_address(destination)
+        payload["origin"] = self.build_location(origin)
+        payload["destination"] = self.build_location(destination)
         payload["departureTime"] = self.build_time(departureTime, timezone)
         payload["travelMode"] = self.build_travel_mode()
         payload["routingPreference"] = self.build_routing_preferences()
@@ -51,8 +51,18 @@ class Routes(BaseClient):
         payload["routeModifiers"] = self.build_route_modifiers(avoidTolls)
         return payload
 
+    def build_location(self, location):
+        if isinstance(location, str):
+            return self.build_address(location)
+        lat, lng = location
+        return self.build_coordinates(lat, lng)
+
     def build_address(self, address):
         return {"address": address}
+    
+    def build_coordinates(self, lat, lng):
+        return {"location":{"latLng":{"latitude":lat, "longitude":lng}}}
+
 
     def build_time(self, time_string, timezone):
         if not time_string:
