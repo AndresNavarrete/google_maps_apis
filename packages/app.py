@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime
 
 from packages.clients.directions import Directions
@@ -8,10 +9,15 @@ from packages.files.output_routes import OutputRoutes
 from packages.providers.directions_provider import DirectionsProvider
 from packages.providers.routes_providers import RoutesProvider
 from packages.validation.validator import Validator
-import logging
+
 
 class App:
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
     def __init__(self, api_key, input_file, service_name) -> None:
         self.api_key = api_key
         self.input_file = input_file
@@ -70,4 +76,3 @@ class App:
         output_path = f"resources/routes_{time}.xlsx"
         output = OutputRoutes(output_path)
         output.export(trips, results)
-

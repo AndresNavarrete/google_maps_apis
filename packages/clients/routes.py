@@ -1,7 +1,8 @@
+import logging
+
 import dateparser
 import pytz
 import requests
-import logging
 
 from packages.clients.base_client import BaseClient
 from packages.enums import Field_Masks
@@ -26,7 +27,7 @@ class Routes(BaseClient):
         payload = self.build_payload(
             origin, destination, departureTime, timezone, avoidTolls
         )
-        logging.debug({"headers": headers, "payload":payload })
+        logging.debug({"headers": headers, "payload": payload})
 
         response = requests.post(
             url,
@@ -63,10 +64,9 @@ class Routes(BaseClient):
 
     def build_address(self, address):
         return {"address": address}
-    
-    def build_coordinates(self, lat, lng):
-        return {"location":{"latLng":{"latitude":lat, "longitude":lng}}}
 
+    def build_coordinates(self, lat, lng):
+        return {"location": {"latLng": {"latitude": lat, "longitude": lng}}}
 
     def build_time(self, time_string, timezone):
         if not time_string:
@@ -114,14 +114,13 @@ class Routes(BaseClient):
         )
 
     def get_toll_data(self, response):
-        DEFAULT_DATA = {"amount":None, "currency":None}
+        DEFAULT_DATA = {"amount": None, "currency": None}
         if "travelAdvisory" not in response["routes"][0].keys():
             return DEFAULT_DATA
         tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
         toll_amount = tollInfo["estimatedPrice"][0]["units"]
         toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
-        return {"amount":int(toll_amount), "currency":toll_currency}
-
+        return {"amount": int(toll_amount), "currency": toll_currency}
 
     def get_duration_seconds(self, duration):
         value = int(duration[:-1])

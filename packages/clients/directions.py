@@ -1,6 +1,8 @@
+import logging
+
 from packages.clients.google_maps_sdk import GoogleMapsSDK
 from packages.enums import Google_Modes
-import logging 
+
 
 # https://developers.google.com/maps/documentation/directions
 class Directions(GoogleMapsSDK):
