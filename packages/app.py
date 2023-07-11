@@ -7,7 +7,7 @@ from packages.files.output_directions import OutputDirections
 from packages.files.output_routes import OutputRoutes
 from packages.providers.directions_provider import DirectionsProvider
 from packages.providers.routes_providers import RoutesProvider
-from packages.vaiidation.validator import Validator
+from packages.validation.validator import Validator
 import logging
 
 class App:
