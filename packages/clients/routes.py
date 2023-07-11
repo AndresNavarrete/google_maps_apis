@@ -1,6 +1,7 @@
 import dateparser
 import pytz
 import requests
+import logging
 
 from packages.clients.base_client import BaseClient
 from packages.enums import Field_Masks
@@ -25,11 +26,14 @@ class Routes(BaseClient):
         payload = self.build_payload(
             origin, destination, departureTime, timezone, avoidTolls
         )
+        logging.debug({"headers": headers, "payload":payload })
+
         response = requests.post(
             url,
             headers=headers,
             json=payload,
         )
+        logging.debug(response.json())
         return response.json()
 
     def build_headers(self):
@@ -73,7 +77,7 @@ class Routes(BaseClient):
 
     def update_datetime_time_aware(self, datetime, timezone):
         # Avialable timezones: https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568
-        DEFAULT_TIMEZONE = "America/Santiago"
+        DEFAULT_TIMEZONE = "America/Mexico_City"
         if not timezone:
             timezone = DEFAULT_TIMEZONE
         tz = pytz.timezone(timezone)
@@ -101,15 +105,23 @@ class Routes(BaseClient):
         meters = response["routes"][0]["distanceMeters"]
         duration = response["routes"][0]["duration"]
         seconds = self.get_duration_seconds(duration)
-        tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
-        toll_amount = tollInfo["estimatedPrice"][0]["units"]
-        toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
+        toll_info = self.get_toll_data(response)
         return RouteResponse(
             meters=int(meters),
             seconds=seconds,
-            toll_amount=int(toll_amount),
-            toll_currency=toll_currency,
+            toll_amount=toll_info.get("amount"),
+            toll_currency=toll_info.get("currency"),
         )
+
+    def get_toll_data(self, response):
+        DEFAULT_DATA = {"amount":None, "currency":None}
+        if "travelAdvisory" not in response["routes"][0].keys():
+            return DEFAULT_DATA
+        tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
+        toll_amount = tollInfo["estimatedPrice"][0]["units"]
+        toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
+        return {"amount":int(toll_amount), "currency":toll_currency}
+
 
     def get_duration_seconds(self, duration):
         value = int(duration[:-1])

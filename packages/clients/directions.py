@@ -1,6 +1,6 @@
 from packages.clients.google_maps_sdk import GoogleMapsSDK
 from packages.enums import Google_Modes
-
+import logging 
 
 # https://developers.google.com/maps/documentation/directions
 class Directions(GoogleMapsSDK):
@@ -50,6 +50,7 @@ class Directions(GoogleMapsSDK):
             departure_time=departure_time,
             avoid=parameter_avoid,
         )
+        logging.debug(directions_response)
         return directions_response
 
     def get_default_response(self):
