@@ -1,5 +1,5 @@
 from abc import ABC
-
+import logging
 
 class BaseProvider(ABC):
     def __init__(self, input_parser, client) -> None:
@@ -10,7 +10,8 @@ class BaseProvider(ABC):
     def execute(self):
         for trip in self.input.trips:
             self.get_service_level(trip)
-            print(f"Processed request {trip.id}")
+            msg= f"Processed request {trip.id}"
+            logging.info(msg)
 
     def get_service_level(self, trip):
         pass
