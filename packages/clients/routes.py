@@ -103,7 +103,7 @@ class Routes(BaseClient):
         return route_modifiers
 
     def handle_error(self, response):
-        if not 'error' in response.keys():
+        if not "error" in response.keys():
             return
         msg = response["error"]["message"]
         raise ValueError(msg)
