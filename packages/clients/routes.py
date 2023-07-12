@@ -17,6 +17,7 @@ class Routes(BaseClient):
         response = self.get_raw_response(
             origin, destination, departureTime, timezone, avoidTolls
         )
+        self.handle_error(response)
         return self.get_response_model(response)
 
     def get_raw_response(
@@ -100,6 +101,12 @@ class Routes(BaseClient):
         route_modifiers = dict()
         route_modifiers["avoidTolls"] = avoidTolls
         return route_modifiers
+
+    def handle_error(self, response):
+        if not 'error' in response.keys():
+            return
+        msg = response["error"]["message"]
+        raise ValueError(msg)
 
     def get_response_model(self, response):
         meters = response["routes"][0]["distanceMeters"]
