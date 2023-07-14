@@ -18,10 +18,11 @@ class App:
         datefmt="%Y-%m-%d %H:%M:%S",
     )
 
-    def __init__(self, api_key, input_file, service_name) -> None:
+    def __init__(self, api_key, input_file, service_name, excel) -> None:
         self.api_key = api_key
         self.input_file = input_file
         self.service_name = service_name
+        self.excel = excel
 
     def execute(self):
         self.set_inputs()
@@ -53,12 +54,12 @@ class App:
 
     def process_direction_output(self, trips, results):
         time = self.get_time_string()
-        output_path = f"resources/directions_{time}.xlsx"
+        output_path = f"resources/directions_{time}"
         output = OutputDirections(output_path)
-        output.export(trips, results)
+        output.export(trips, results, excel=self.excel)
 
     def get_time_string(self):
-        return datetime.now().strftime("%Y-%m-%d_at_%H:%M")
+        return datetime.now().strftime("%Y-%m-%d_at_%H-%M")
 
     def execute_routes(self):
         trips = self.input_parser.trips
@@ -73,6 +74,6 @@ class App:
 
     def process_routes_output(self, trips, results):
         time = self.get_time_string()
-        output_path = f"resources/routes_{time}.xlsx"
+        output_path = f"resources/routes_{time}"
         output = OutputRoutes(output_path)
-        output.export(trips, results)
+        output.export(trips, results, excel=self.excel)

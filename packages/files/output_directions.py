@@ -1,15 +1,19 @@
+import json
+
 import pandas as pd
 
 from packages.files.base_output import BaseOutput
 
 
 class OutputDirections(BaseOutput):
-    def export(self, trips, results):
+    def export(self, trips, results, excel):
         self.trips = list()
         self.steps = list()
         for request, response in zip(trips, results):
             self.add_trip(request, response)
-        self.write_excel()
+        if excel:
+            self.write_excel()
+        self.export_json()
 
     def add_trip(self, request, response):
         new_trip = {
@@ -45,8 +49,18 @@ class OutputDirections(BaseOutput):
         self.steps.append(new_step)
 
     def write_excel(self):
+        path = f"{self.output_path}.xlsx"
         trips = pd.DataFrame(self.trips)
         steps = pd.DataFrame(self.steps)
-        with pd.ExcelWriter(self.output_path) as writer:
+        with pd.ExcelWriter(path) as writer:
             trips.to_excel(writer, sheet_name="Viajes")
             steps.to_excel(writer, sheet_name="Etapas")
+
+    def export_json(self):
+        trips_path = f"{self.output_path}_trips.json"
+        steps_path = f"{self.output_path}_steps.json"
+
+        with open(trips_path, "w") as f:
+            json.dump(self.trips, f)
+        with open(steps_path, "w") as f:
+            json.dump(self.steps, f)
