@@ -16,4 +16,4 @@ class DirectionsProvider(BaseProvider):
         response = self.client.get_response(
             origin, destination, mode, date, parameter_avoid, only_bus
         )
-        self.responses.append(response)
+        return response

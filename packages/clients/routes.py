@@ -122,12 +122,13 @@ class Routes(BaseClient):
 
     def get_toll_data(self, response):
         DEFAULT_DATA = {"amount": None, "currency": None}
-        if "travelAdvisory" not in response["routes"][0].keys():
+        try:
+            tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
+            toll_amount = tollInfo["estimatedPrice"][0]["units"]
+            toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
+            return {"amount": int(toll_amount), "currency": toll_currency}
+        except:
             return DEFAULT_DATA
-        tollInfo = response["routes"][0]["travelAdvisory"]["tollInfo"]
-        toll_amount = tollInfo["estimatedPrice"][0]["units"]
-        toll_currency = tollInfo["estimatedPrice"][0]["currencyCode"]
-        return {"amount": int(toll_amount), "currency": toll_currency}
 
     def get_duration_seconds(self, duration):
         value = int(duration[:-1])
@@ -137,3 +138,11 @@ class Routes(BaseClient):
             return 60 * value
         if "h" in duration:
             return 3600 * value
+
+    def get_default_response(self):
+        return RouteResponse(
+            meters=None,
+            seconds=None,
+            toll_amount=None,
+            toll_currency=None,
+        )

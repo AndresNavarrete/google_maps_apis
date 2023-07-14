@@ -12,4 +12,4 @@ class RoutesProvider(BaseProvider):
         response = self.client.get_response(
             origin, destination, departureTime, timezone, avoidTolls
         )
-        self.responses.append(response)
+        return response
