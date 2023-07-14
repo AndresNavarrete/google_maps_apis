@@ -13,7 +13,8 @@ class OutputDirections(BaseOutput):
             self.add_trip(request, response)
         if excel:
             self.write_excel()
-        self.export_json()
+        else:
+            self.export_json()
 
     def add_trip(self, request, response):
         new_trip = {

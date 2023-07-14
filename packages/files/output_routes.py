@@ -10,7 +10,8 @@ class OutputRoutes(BaseOutput):
         rows = self.get_rows(trips, results)
         if excel:
             self.write_excel(rows)
-        self.export_json(rows)
+        else:
+            self.export_json(rows)
 
     def get_rows(self, trips, results):
         rows = list()
