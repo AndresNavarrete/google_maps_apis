@@ -113,11 +113,15 @@ class Routes(BaseClient):
         duration = response["routes"][0]["duration"]
         seconds = self.get_duration_seconds(duration)
         toll_info = self.get_toll_data(response)
+        details = self.get_details(response)
         return RouteResponse(
             meters=int(meters),
             seconds=seconds,
             toll_amount=toll_info.get("amount"),
             toll_currency=toll_info.get("currency"),
+            description=details["description"],
+            instructions=details["instructions"],
+            meters_with_tolls = details["meters_with_tolls"]
         )
 
     def get_toll_data(self, response):
@@ -145,4 +149,26 @@ class Routes(BaseClient):
             seconds=None,
             toll_amount=None,
             toll_currency=None,
+            description=None,
+            instructions=None,
+            meters_with_tolls=None,
         )
+    
+    def get_details(self, response):
+        instructions = list()
+        dist_with_tolls = 0
+        description = response["routes"][0]["description"]
+        for step in response["routes"][0]["legs"][0]["steps"]:
+            instruction = step["navigationInstruction"]["instructions"]
+            clean_string = instruction.replace("\n", ". ")
+            instructions.append(clean_string)
+            if "con peajes" in instruction:
+                distance = step["distanceMeters"]
+                dist_with_tolls += int(distance)
+        single_instruction = ". ".join(instructions)
+        return {
+            "meters_with_tolls": dist_with_tolls,
+            "description": description,
+            "instructions": single_instruction,
+        }
+
