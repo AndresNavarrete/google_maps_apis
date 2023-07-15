@@ -113,15 +113,16 @@ class Routes(BaseClient):
         duration = response["routes"][0]["duration"]
         seconds = self.get_duration_seconds(duration)
         toll_info = self.get_toll_data(response)
-        details = self.get_details(response)
+        descriptions = self.get_description(response)
+        steps = self.handle_step_details(response)
         return RouteResponse(
             meters=int(meters),
             seconds=seconds,
             toll_amount=toll_info.get("amount"),
             toll_currency=toll_info.get("currency"),
-            description=details["description"],
-            instructions=details["instructions"],
-            meters_with_tolls = details["meters_with_tolls"]
+            description=descriptions,
+            instructions=steps.get("instructions"),
+            meters_with_tolls=steps.get("meters_with_tolls"),
         )
 
     def get_toll_data(self, response):
@@ -153,11 +154,27 @@ class Routes(BaseClient):
             instructions=None,
             meters_with_tolls=None,
         )
-    
-    def get_details(self, response):
+
+    def handle_step_details(self, response):
+        DEFALT_STEPS = {
+            "meters_with_tolls": None,
+            "instructions": None,
+        }
+        try:
+            return self.get_step_details(response)
+        except:
+            return DEFALT_STEPS
+
+    def get_description(self, response):
+        DEFAULT_DESCRIPTION = None
+        try:
+            return response["routes"][0]["description"]
+        except:
+            return DEFAULT_DESCRIPTION
+
+    def get_step_details(self, response):
         instructions = list()
         dist_with_tolls = 0
-        description = response["routes"][0]["description"]
         for step in response["routes"][0]["legs"][0]["steps"]:
             instruction = step["navigationInstruction"]["instructions"]
             clean_string = instruction.replace("\n", ". ")
@@ -168,7 +185,5 @@ class Routes(BaseClient):
         single_instruction = ". ".join(instructions)
         return {
             "meters_with_tolls": dist_with_tolls,
-            "description": description,
             "instructions": single_instruction,
         }
-
