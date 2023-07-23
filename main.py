@@ -1,9 +1,9 @@
 from sys import argv
-
+import os
 from packages.app import App
 
 if __name__ == "__main__":
-    api_key = "AIzaSyBpTac3buTxXFoCNT6gMVBwpMWxKiRLOXI"
+    api_key = os.getenv("API_KEY")
     input_file = "request.xlsx"
     excel = True
 
