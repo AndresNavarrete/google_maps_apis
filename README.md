@@ -4,6 +4,7 @@ Para ejecutar este programa es necesario tener un archivo en  `resources/request
 ## Dependencias
 
 Para instalar todas las librerias necesarias para correr el programa basta con tener instalado pip y ejecutar el siguiente código en la línea de comandos
+
 ```sh
 pip install -r requirements.txt
 ```
